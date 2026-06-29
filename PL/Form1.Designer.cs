@@ -36,7 +36,8 @@
             System.Windows.Forms.Button btnExpPro;
             System.Windows.Forms.Button btnImpPro;
             System.Windows.Forms.Button button8;
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.Button btnclientes;
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -77,6 +78,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.docImprimir = new System.Drawing.Printing.PrintDocument();
+            this.label12 = new System.Windows.Forms.Label();
+            this.picProducto = new System.Windows.Forms.PictureBox();
+            this.btnsubirImg = new System.Windows.Forms.Button();
             button2 = new System.Windows.Forms.Button();
             button3 = new System.Windows.Forms.Button();
             button4 = new System.Windows.Forms.Button();
@@ -85,6 +89,7 @@
             btnExpPro = new System.Windows.Forms.Button();
             btnImpPro = new System.Windows.Forms.Button();
             button8 = new System.Windows.Forms.Button();
+            btnclientes = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -94,6 +99,7 @@
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picProducto)).BeginInit();
             this.SuspendLayout();
             // 
             // button2
@@ -103,7 +109,7 @@
             button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
             button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            button2.Location = new System.Drawing.Point(48, 358);
+            button2.Location = new System.Drawing.Point(35, 312);
             button2.Name = "button2";
             button2.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             button2.Size = new System.Drawing.Size(111, 50);
@@ -119,7 +125,7 @@
             button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
             button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            button3.Location = new System.Drawing.Point(48, 434);
+            button3.Location = new System.Drawing.Point(35, 388);
             button3.Name = "button3";
             button3.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             button3.Size = new System.Drawing.Size(157, 50);
@@ -135,7 +141,7 @@
             button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
             button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            button4.Location = new System.Drawing.Point(48, 516);
+            button4.Location = new System.Drawing.Point(35, 470);
             button4.Name = "button4";
             button4.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             button4.Size = new System.Drawing.Size(111, 50);
@@ -151,7 +157,7 @@
             button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
             button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            button5.Location = new System.Drawing.Point(48, 599);
+            button5.Location = new System.Drawing.Point(34, 610);
             button5.Name = "button5";
             button5.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             button5.Size = new System.Drawing.Size(111, 50);
@@ -167,7 +173,7 @@
             button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
             button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            button1.Location = new System.Drawing.Point(48, 211);
+            button1.Location = new System.Drawing.Point(35, 165);
             button1.Name = "button1";
             button1.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             button1.Size = new System.Drawing.Size(138, 50);
@@ -183,7 +189,7 @@
             btnExpPro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             btnExpPro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
             btnExpPro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            btnExpPro.Location = new System.Drawing.Point(825, 45);
+            btnExpPro.Location = new System.Drawing.Point(737, 13);
             btnExpPro.Name = "btnExpPro";
             btnExpPro.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             btnExpPro.Size = new System.Drawing.Size(138, 50);
@@ -200,7 +206,7 @@
             btnImpPro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             btnImpPro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
             btnImpPro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            btnImpPro.Location = new System.Drawing.Point(825, 114);
+            btnImpPro.Location = new System.Drawing.Point(737, 82);
             btnImpPro.Name = "btnImpPro";
             btnImpPro.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             btnImpPro.Size = new System.Drawing.Size(138, 50);
@@ -217,7 +223,7 @@
             button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             button8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
             button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            button8.Location = new System.Drawing.Point(48, 290);
+            button8.Location = new System.Drawing.Point(35, 244);
             button8.Name = "button8";
             button8.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             button8.Size = new System.Drawing.Size(138, 50);
@@ -230,6 +236,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel1.Controls.Add(btnclientes);
             this.panel1.Controls.Add(button8);
             this.panel1.Controls.Add(button5);
             this.panel1.Controls.Add(button4);
@@ -241,7 +248,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(240, 728);
+            this.panel1.Size = new System.Drawing.Size(240, 780);
             this.panel1.TabIndex = 1;
             // 
             // label1
@@ -278,7 +285,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(240, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1114, 728);
+            this.panel2.Size = new System.Drawing.Size(1155, 780);
             this.panel2.TabIndex = 2;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -298,6 +305,9 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.White;
+            this.panel6.Controls.Add(this.btnsubirImg);
+            this.panel6.Controls.Add(this.picProducto);
+            this.panel6.Controls.Add(this.label12);
             this.panel6.Controls.Add(this.op2);
             this.panel6.Controls.Add(this.op1);
             this.panel6.Controls.Add(this.Btnmodificar);
@@ -314,16 +324,16 @@
             this.panel6.Controls.Add(this.label15);
             this.panel6.Controls.Add(this.label14);
             this.panel6.Controls.Add(this.label9);
-            this.panel6.Location = new System.Drawing.Point(703, 204);
+            this.panel6.Location = new System.Drawing.Point(724, 181);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(378, 512);
+            this.panel6.Size = new System.Drawing.Size(409, 567);
             this.panel6.TabIndex = 6;
             // 
             // op2
             // 
             this.op2.AutoSize = true;
             this.op2.Font = new System.Drawing.Font("Segoe UI", 7.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.op2.Location = new System.Drawing.Point(225, 388);
+            this.op2.Location = new System.Drawing.Point(60, 400);
             this.op2.Name = "op2";
             this.op2.Size = new System.Drawing.Size(91, 21);
             this.op2.TabIndex = 19;
@@ -335,7 +345,7 @@
             // 
             this.op1.AutoSize = true;
             this.op1.Font = new System.Drawing.Font("Segoe UI", 7.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.op1.Location = new System.Drawing.Point(138, 388);
+            this.op1.Location = new System.Drawing.Point(60, 360);
             this.op1.Name = "op1";
             this.op1.Size = new System.Drawing.Size(77, 21);
             this.op1.TabIndex = 18;
@@ -348,7 +358,7 @@
             this.Btnmodificar.BackColor = System.Drawing.Color.Moccasin;
             this.Btnmodificar.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btnmodificar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Btnmodificar.Location = new System.Drawing.Point(212, 448);
+            this.Btnmodificar.Location = new System.Drawing.Point(231, 501);
             this.Btnmodificar.Name = "Btnmodificar";
             this.Btnmodificar.Size = new System.Drawing.Size(104, 45);
             this.Btnmodificar.TabIndex = 17;
@@ -361,7 +371,7 @@
             this.Btnguardar.BackColor = System.Drawing.Color.IndianRed;
             this.Btnguardar.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btnguardar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Btnguardar.Location = new System.Drawing.Point(68, 448);
+            this.Btnguardar.Location = new System.Drawing.Point(82, 501);
             this.Btnguardar.Name = "Btnguardar";
             this.Btnguardar.Size = new System.Drawing.Size(104, 45);
             this.Btnguardar.TabIndex = 9;
@@ -371,28 +381,28 @@
             // 
             // desc
             // 
-            this.desc.Location = new System.Drawing.Point(176, 310);
+            this.desc.Location = new System.Drawing.Point(13, 271);
             this.desc.Name = "desc";
-            this.desc.Size = new System.Drawing.Size(140, 30);
+            this.desc.Size = new System.Drawing.Size(156, 30);
             this.desc.TabIndex = 15;
             // 
             // stock
             // 
-            this.stock.Location = new System.Drawing.Point(160, 245);
+            this.stock.Location = new System.Drawing.Point(225, 184);
             this.stock.Name = "stock";
             this.stock.Size = new System.Drawing.Size(156, 30);
             this.stock.TabIndex = 14;
             // 
             // precio
             // 
-            this.precio.Location = new System.Drawing.Point(160, 177);
+            this.precio.Location = new System.Drawing.Point(13, 184);
             this.precio.Name = "precio";
             this.precio.Size = new System.Drawing.Size(156, 30);
             this.precio.TabIndex = 13;
             // 
             // nombre
             // 
-            this.nombre.Location = new System.Drawing.Point(160, 69);
+            this.nombre.Location = new System.Drawing.Point(13, 99);
             this.nombre.Name = "nombre";
             this.nombre.Size = new System.Drawing.Size(156, 30);
             this.nombre.TabIndex = 12;
@@ -400,7 +410,7 @@
             // categoria
             // 
             this.categoria.FormattingEnabled = true;
-            this.categoria.Location = new System.Drawing.Point(162, 126);
+            this.categoria.Location = new System.Drawing.Point(225, 98);
             this.categoria.Name = "categoria";
             this.categoria.Size = new System.Drawing.Size(154, 31);
             this.categoria.TabIndex = 11;
@@ -410,7 +420,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
-            this.label11.Location = new System.Drawing.Point(30, 133);
+            this.label11.Location = new System.Drawing.Point(249, 76);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(86, 19);
             this.label11.TabIndex = 10;
@@ -421,7 +431,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
-            this.label10.Location = new System.Drawing.Point(30, 321);
+            this.label10.Location = new System.Drawing.Point(46, 238);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(91, 19);
             this.label10.TabIndex = 9;
@@ -433,7 +443,7 @@
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
-            this.label17.Location = new System.Drawing.Point(30, 76);
+            this.label17.Location = new System.Drawing.Point(46, 76);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(69, 19);
             this.label17.TabIndex = 8;
@@ -444,7 +454,7 @@
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
-            this.label16.Location = new System.Drawing.Point(30, 184);
+            this.label16.Location = new System.Drawing.Point(57, 162);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(58, 19);
             this.label16.TabIndex = 7;
@@ -455,7 +465,7 @@
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
-            this.label15.Location = new System.Drawing.Point(30, 252);
+            this.label15.Location = new System.Drawing.Point(273, 162);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(53, 19);
             this.label15.TabIndex = 6;
@@ -466,7 +476,7 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
-            this.label14.Location = new System.Drawing.Point(30, 390);
+            this.label14.Location = new System.Drawing.Point(64, 320);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(62, 19);
             this.label14.TabIndex = 5;
@@ -543,14 +553,14 @@
             this.dgv.BackgroundColor = System.Drawing.Color.White;
             this.dgv.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgv.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv.EnableHeadersVisualStyles = false;
             this.dgv.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
@@ -560,7 +570,7 @@
             this.dgv.RowHeadersWidth = 51;
             this.dgv.RowTemplate.Height = 24;
             this.dgv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv.Size = new System.Drawing.Size(661, 436);
+            this.dgv.Size = new System.Drawing.Size(680, 470);
             this.dgv.TabIndex = 3;
             this.dgv.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_CellClick);
             this.dgv.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_CellContentClick);
@@ -604,7 +614,7 @@
             this.panel5.Controls.Add(this.label7);
             this.panel5.Location = new System.Drawing.Point(526, 75);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(200, 100);
+            this.panel5.Size = new System.Drawing.Size(190, 100);
             this.panel5.TabIndex = 2;
             // 
             // label6
@@ -662,18 +672,66 @@
             this.label2.Text = "PRODUCTOS";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
+            // btnclientes
+            // 
+            btnclientes.FlatAppearance.BorderSize = 0;
+            btnclientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
+            btnclientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btnclientes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
+            btnclientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            btnclientes.Location = new System.Drawing.Point(35, 541);
+            btnclientes.Name = "btnclientes";
+            btnclientes.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            btnclientes.Size = new System.Drawing.Size(111, 50);
+            btnclientes.TabIndex = 8;
+            btnclientes.Text = "CLIENTES";
+            btnclientes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            btnclientes.UseVisualStyleBackColor = true;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
+            this.label12.Location = new System.Drawing.Point(249, 238);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(108, 19);
+            this.label12.TabIndex = 20;
+            this.label12.Text = "SUBIR IMAGEN";
+            // 
+            // picProducto
+            // 
+            this.picProducto.Location = new System.Drawing.Point(232, 360);
+            this.picProducto.Name = "picProducto";
+            this.picProducto.Size = new System.Drawing.Size(149, 119);
+            this.picProducto.TabIndex = 21;
+            this.picProducto.TabStop = false;
+            // 
+            // btnsubirImg
+            // 
+            this.btnsubirImg.BackColor = System.Drawing.Color.MediumPurple;
+            this.btnsubirImg.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsubirImg.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnsubirImg.Location = new System.Drawing.Point(253, 268);
+            this.btnsubirImg.Name = "btnsubirImg";
+            this.btnsubirImg.Size = new System.Drawing.Size(88, 37);
+            this.btnsubirImg.TabIndex = 22;
+            this.btnsubirImg.Text = "SUBIR";
+            this.btnsubirImg.UseVisualStyleBackColor = false;
+            this.btnsubirImg.Click += new System.EventHandler(this.btnsubirImg_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
-            this.ClientSize = new System.Drawing.Size(1354, 728);
+            this.ClientSize = new System.Drawing.Size(1395, 780);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = " ";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -691,6 +749,7 @@
             this.panel5.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picProducto)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -737,6 +796,9 @@
         private System.Windows.Forms.RadioButton op2;
         private System.Windows.Forms.RadioButton op1;
         private System.Drawing.Printing.PrintDocument docImprimir;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.PictureBox picProducto;
+        private System.Windows.Forms.Button btnsubirImg;
     }
 }
 

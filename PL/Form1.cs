@@ -14,6 +14,8 @@ namespace PL
 {
     public partial class Form1 : Form
     {
+        // Variable global para guardar la ruta del archivo seleccionado
+        string rutaImagenSeleccionada = "";
         public Form1()
         {
             InitializeComponent();
@@ -237,5 +239,25 @@ namespace PL
             // Si no tienes una impresora real conectada, Windows abrirá la opción de "Guardar como PDF"
             docImprimir.Print();
         }
+
+        private void btnsubirImg_Click(object sender, EventArgs e)
+        {
+       
+            // 1. Crear una ventana nativa de Windows para buscar archivos
+            OpenFileDialog ofd = new OpenFileDialog();
+
+            // 2. Filtrar para que solo permita elegir imágenes comunes
+            ofd.Filter = "Imágenes (*.jpg; *.jpeg; *.png)|*.jpg;*.jpeg;*.png";
+
+            if (ofd.ShowDialog() == DialogResult.OK)
+            {
+                // 3. Guardar la ruta del archivo en nuestra variable global
+                rutaImagenSeleccionada = ofd.FileName;
+
+                // 4. Mostrar la imagen físicamente en el PictureBox para que el usuario la vea
+                picProducto.Image = Image.FromFile(rutaImagenSeleccionada);
+            }
+        }
     }
+    
 }

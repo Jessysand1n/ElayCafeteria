@@ -35,12 +35,13 @@
             System.Windows.Forms.Button button2;
             System.Windows.Forms.Button button1;
             System.Windows.Forms.Button btnActCat;
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.Button btnImpCat;
             System.Windows.Forms.Button btnExpCat;
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.Button btnclientes;
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -74,6 +75,7 @@
             btnActCat = new System.Windows.Forms.Button();
             btnImpCat = new System.Windows.Forms.Button();
             btnExpCat = new System.Windows.Forms.Button();
+            btnclientes = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCat)).BeginInit();
@@ -87,12 +89,13 @@
             button8.FlatAppearance.BorderSize = 0;
             button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
             button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             button8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
             button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            button8.Location = new System.Drawing.Point(48, 290);
+            button8.Location = new System.Drawing.Point(35, 226);
             button8.Name = "button8";
             button8.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            button8.Size = new System.Drawing.Size(138, 50);
+            button8.Size = new System.Drawing.Size(151, 50);
             button8.TabIndex = 7;
             button8.Text = "CATEGORIAS";
             button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -103,12 +106,13 @@
             button5.FlatAppearance.BorderSize = 0;
             button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
             button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
             button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            button5.Location = new System.Drawing.Point(48, 599);
+            button5.Location = new System.Drawing.Point(35, 523);
             button5.Name = "button5";
             button5.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            button5.Size = new System.Drawing.Size(111, 50);
+            button5.Size = new System.Drawing.Size(134, 50);
             button5.TabIndex = 6;
             button5.Text = "REPORTES";
             button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -119,9 +123,10 @@
             button4.FlatAppearance.BorderSize = 0;
             button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
             button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
             button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            button4.Location = new System.Drawing.Point(48, 516);
+            button4.Location = new System.Drawing.Point(35, 402);
             button4.Name = "button4";
             button4.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             button4.Size = new System.Drawing.Size(111, 50);
@@ -135,12 +140,13 @@
             button3.FlatAppearance.BorderSize = 0;
             button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
             button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
             button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            button3.Location = new System.Drawing.Point(48, 434);
+            button3.Location = new System.Drawing.Point(29, 346);
             button3.Name = "button3";
             button3.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            button3.Size = new System.Drawing.Size(157, 50);
+            button3.Size = new System.Drawing.Size(171, 50);
             button3.TabIndex = 4;
             button3.Text = "TRABAJADORES";
             button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -151,9 +157,10 @@
             button2.FlatAppearance.BorderSize = 0;
             button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
             button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
             button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            button2.Location = new System.Drawing.Point(48, 358);
+            button2.Location = new System.Drawing.Point(35, 290);
             button2.Name = "button2";
             button2.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             button2.Size = new System.Drawing.Size(111, 50);
@@ -167,12 +174,13 @@
             button1.FlatAppearance.BorderSize = 0;
             button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
             button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
             button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            button1.Location = new System.Drawing.Point(48, 211);
+            button1.Location = new System.Drawing.Point(35, 164);
             button1.Name = "button1";
             button1.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            button1.Size = new System.Drawing.Size(138, 50);
+            button1.Size = new System.Drawing.Size(151, 50);
             button1.TabIndex = 2;
             button1.Text = "PRODUCTOS";
             button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -197,9 +205,43 @@
             btnActCat.UseVisualStyleBackColor = true;
             btnActCat.Click += new System.EventHandler(this.button6_Click);
             // 
+            // btnImpCat
+            // 
+            btnImpCat.FlatAppearance.BorderSize = 0;
+            btnImpCat.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
+            btnImpCat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btnImpCat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
+            btnImpCat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            btnImpCat.Location = new System.Drawing.Point(1166, 36);
+            btnImpCat.Name = "btnImpCat";
+            btnImpCat.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            btnImpCat.Size = new System.Drawing.Size(138, 50);
+            btnImpCat.TabIndex = 24;
+            btnImpCat.Text = "IMPRIMIR";
+            btnImpCat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            btnImpCat.UseVisualStyleBackColor = true;
+            // 
+            // btnExpCat
+            // 
+            btnExpCat.FlatAppearance.BorderSize = 0;
+            btnExpCat.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
+            btnExpCat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btnExpCat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
+            btnExpCat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            btnExpCat.Location = new System.Drawing.Point(969, 36);
+            btnExpCat.Name = "btnExpCat";
+            btnExpCat.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            btnExpCat.Size = new System.Drawing.Size(138, 50);
+            btnExpCat.TabIndex = 23;
+            btnExpCat.Text = "EXPORTAR";
+            btnExpCat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            btnExpCat.UseVisualStyleBackColor = true;
+            btnExpCat.Click += new System.EventHandler(this.btnExpCat_Click);
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel1.Controls.Add(btnclientes);
             this.panel1.Controls.Add(button8);
             this.panel1.Controls.Add(button5);
             this.panel1.Controls.Add(button4);
@@ -237,14 +279,14 @@
             this.dgvCat.BackgroundColor = System.Drawing.Color.White;
             this.dgvCat.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvCat.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCat.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCat.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvCat.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCat.EnableHeadersVisualStyles = false;
             this.dgvCat.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
@@ -454,52 +496,36 @@
             // 
             // graficoCategorias
             // 
-            chartArea2.Name = "ChartArea1";
-            this.graficoCategorias.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.graficoCategorias.Legends.Add(legend2);
+            chartArea1.Name = "ChartArea1";
+            this.graficoCategorias.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.graficoCategorias.Legends.Add(legend1);
             this.graficoCategorias.Location = new System.Drawing.Point(509, 446);
             this.graficoCategorias.Name = "graficoCategorias";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.graficoCategorias.Series.Add(series2);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.graficoCategorias.Series.Add(series1);
             this.graficoCategorias.Size = new System.Drawing.Size(537, 270);
             this.graficoCategorias.TabIndex = 21;
             this.graficoCategorias.Text = "chart1";
             // 
-            // btnImpCat
+            // btnclientes
             // 
-            btnImpCat.FlatAppearance.BorderSize = 0;
-            btnImpCat.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
-            btnImpCat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btnImpCat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
-            btnImpCat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            btnImpCat.Location = new System.Drawing.Point(1166, 36);
-            btnImpCat.Name = "btnImpCat";
-            btnImpCat.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            btnImpCat.Size = new System.Drawing.Size(138, 50);
-            btnImpCat.TabIndex = 24;
-            btnImpCat.Text = "IMPRIMIR";
-            btnImpCat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            btnImpCat.UseVisualStyleBackColor = true;
-            // 
-            // btnExpCat
-            // 
-            btnExpCat.FlatAppearance.BorderSize = 0;
-            btnExpCat.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
-            btnExpCat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btnExpCat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
-            btnExpCat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            btnExpCat.Location = new System.Drawing.Point(969, 36);
-            btnExpCat.Name = "btnExpCat";
-            btnExpCat.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            btnExpCat.Size = new System.Drawing.Size(138, 50);
-            btnExpCat.TabIndex = 23;
-            btnExpCat.Text = "EXPORTAR";
-            btnExpCat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            btnExpCat.UseVisualStyleBackColor = true;
-            btnExpCat.Click += new System.EventHandler(this.btnExpCat_Click);
+            btnclientes.FlatAppearance.BorderSize = 0;
+            btnclientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
+            btnclientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btnclientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            btnclientes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
+            btnclientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            btnclientes.Location = new System.Drawing.Point(34, 467);
+            btnclientes.Name = "btnclientes";
+            btnclientes.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            btnclientes.Size = new System.Drawing.Size(122, 50);
+            btnclientes.TabIndex = 9;
+            btnclientes.Text = "CLIENTES";
+            btnclientes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            btnclientes.UseVisualStyleBackColor = true;
             // 
             // CATEGORIAS
             // 

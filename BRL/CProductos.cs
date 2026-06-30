@@ -42,7 +42,7 @@ namespace BRL
             objacc.Ejecutar("sp_InsertarProducto", p);
         }
         public string subirdatos(int fila, DataGridView dgv, TextBox nom, RadioButton op1,
-         RadioButton op2, TextBox precio, TextBox stock, TextBox desc, ComboBox categoria, string rutaGuardada)
+         RadioButton op2, TextBox precio, TextBox stock, TextBox desc, ComboBox categoria)
         {
             // Nota: El orden de los índices de dgv[columna, fila] depende de tu procedimiento sp_ListarProductos
             nom.Text = dgv["Producto", fila].Value.ToString();
@@ -59,7 +59,7 @@ namespace BRL
                 op2.Checked = true;
 
             // Extraemos la ruta de la grilla
-            rutaGuardada = dgv["Imagen", fila].Value.ToString();
+            string rutaGuardada = dgv["Imagen", fila].Value.ToString();
 
             // Devolvemos la ruta hacia el Formulario
             return rutaGuardada;

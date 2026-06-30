@@ -103,7 +103,7 @@ namespace PL
         {
             fila = e.RowIndex; //en que fila se hizo click
             objcli.subirdatos( fila,  dgv, nombre,  op1,
-            op2,  precio,  stock,  desc,  categoria, rutaImagenSeleccionada);
+            op2,  precio,  stock,  desc,  categoria);
             if (!string.IsNullOrEmpty(rutaImagenSeleccionada) && rutaImagenSeleccionada != "sin_imagen.png" && System.IO.File.Exists(rutaImagenSeleccionada))
             {
                 // Usamos la ruta completa para evitar cualquier error de biblioteca
@@ -114,6 +114,8 @@ namespace PL
                 picProducto.Image = null; // Si no hay foto, limpiamos el contenedor
             }
         }
+
+
 
         private void Btneliminar_Click(object sender, EventArgs e)
         {

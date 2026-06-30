@@ -8,7 +8,7 @@
             <TablixCornerRow>
               <TablixCornerCell>
                 <CellContents>
-                  <Textbox Name="Textbox7">
+                  <Textbox Name="Textbox8">
                     <CanGrow>true</CanGrow>
                     <KeepTogether>true</KeepTogether>
                     <Paragraphs>
@@ -22,7 +22,7 @@
                         <Style />
                       </Paragraph>
                     </Paragraphs>
-                    <rd:DefaultName>Textbox7</rd:DefaultName>
+                    <rd:DefaultName>Textbox8</rd:DefaultName>
                     <Style>
                       <Border>
                         <Color>LightGrey</Color>
@@ -42,18 +42,18 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>4.30446cm</Width>
+              <Width>3.65888cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>4.30446cm</Width>
+              <Width>3.65888cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>4.30446cm</Width>
+              <Width>3.65888cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
             <TablixRow>
-              <Height>1.18208cm</Height>
+              <Height>0.6cm</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
@@ -158,9 +158,9 @@
                 </GroupExpressions>
               </Group>
               <TablixHeader>
-                <Size>1.18208cm</Size>
+                <Size>0.6cm</Size>
                 <CellContents>
-                  <Textbox Name="Textbox5">
+                  <Textbox Name="Textbox6">
                     <CanGrow>true</CanGrow>
                     <KeepTogether>true</KeepTogether>
                     <Paragraphs>
@@ -174,7 +174,7 @@
                         <Style />
                       </Paragraph>
                     </Paragraphs>
-                    <rd:DefaultName>Textbox5</rd:DefaultName>
+                    <rd:DefaultName>Textbox6</rd:DefaultName>
                     <Style>
                       <Border>
                         <Color>LightGrey</Color>
@@ -191,9 +191,9 @@
             </TablixMember>
             <TablixMember>
               <TablixHeader>
-                <Size>1.18208cm</Size>
+                <Size>0.6cm</Size>
                 <CellContents>
-                  <Textbox Name="Textbox10">
+                  <Textbox Name="Textbox11">
                     <CanGrow>true</CanGrow>
                     <KeepTogether>true</KeepTogether>
                     <Paragraphs>
@@ -207,7 +207,7 @@
                         <Style />
                       </Paragraph>
                     </Paragraphs>
-                    <rd:DefaultName>Textbox10</rd:DefaultName>
+                    <rd:DefaultName>Textbox11</rd:DefaultName>
                     <Style>
                       <Border>
                         <Color>LightGrey</Color>
@@ -224,9 +224,9 @@
             </TablixMember>
             <TablixMember>
               <TablixHeader>
-                <Size>1.18208cm</Size>
+                <Size>0.6cm</Size>
                 <CellContents>
-                  <Textbox Name="Textbox8">
+                  <Textbox Name="Textbox9">
                     <CanGrow>true</CanGrow>
                     <KeepTogether>true</KeepTogether>
                     <Paragraphs>
@@ -240,7 +240,7 @@
                         <Style />
                       </Paragraph>
                     </Paragraphs>
-                    <rd:DefaultName>Textbox8</rd:DefaultName>
+                    <rd:DefaultName>Textbox9</rd:DefaultName>
                     <Style>
                       <Border>
                         <Color>LightGrey</Color>
@@ -271,7 +271,7 @@
                 </SortExpression>
               </SortExpressions>
               <TablixHeader>
-                <Size>4.30446cm</Size>
+                <Size>3.65888cm</Size>
                 <CellContents>
                   <Textbox Name="id_categoria">
                     <CanGrow>true</CanGrow>
@@ -305,63 +305,24 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
-        <Top>1.63267cm</Top>
-        <Left>0.84645cm</Left>
-        <Height>2.36417cm</Height>
-        <Width>17.21783cm</Width>
+        <Top>1.42664cm</Top>
+        <Left>1.09176cm</Left>
+        <Height>1.2cm</Height>
+        <Width>14.6355cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
           </Border>
         </Style>
       </Tablix>
-      <Textbox Name="Textbox4">
-        <CanGrow>true</CanGrow>
-        <KeepTogether>true</KeepTogether>
-        <Paragraphs>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>PRODUCTOS DE LA CAFETERIA</Value>
-                <Style>
-                  <FontSize>14pt</FontSize>
-                  <FontWeight>Bold</FontWeight>
-                  <Color>Brown</Color>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <Style />
-          </Paragraph>
-        </Paragraphs>
-        <rd:DefaultName>Textbox4</rd:DefaultName>
-        <Top>0.7225cm</Top>
-        <Left>0.84645cm</Left>
-        <Height>0.6cm</Height>
-        <Width>7.91867cm</Width>
-        <ZIndex>1</ZIndex>
-        <Style>
-          <Border>
-            <Style>None</Style>
-          </Border>
-          <PaddingLeft>2pt</PaddingLeft>
-          <PaddingRight>2pt</PaddingRight>
-          <PaddingTop>2pt</PaddingTop>
-          <PaddingBottom>2pt</PaddingBottom>
-        </Style>
-      </Textbox>
     </ReportItems>
-    <Height>4.925in</Height>
-    <Style>
-      <Border>
-        <Style>None</Style>
-      </Border>
-      <BackgroundColor>#ffe9f0</BackgroundColor>
-    </Style>
+    <Height>2in</Height>
+    <Style />
   </Body>
-  <Width>7.51425in</Width>
+  <Width>6.64758in</Width>
   <Page>
     <PageHeader>
-      <Height>3.1002cm</Height>
+      <Height>2.69239cm</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
@@ -369,8 +330,6 @@
           <Source>Embedded</Source>
           <Value>logo</Value>
           <Sizing>FitProportional</Sizing>
-          <Top>0.2667cm</Top>
-          <Left>0.33867cm</Left>
           <Height>2.516cm</Height>
           <Width>2.91817cm</Width>
           <Style>
@@ -399,8 +358,8 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox1</rd:DefaultName>
-          <Top>0.6477cm</Top>
-          <Left>3.5687cm</Left>
+          <Top>0.381cm</Top>
+          <Left>3.23003cm</Left>
           <Height>1.44667cm</Height>
           <Width>13.65483cm</Width>
           <ZIndex>1</ZIndex>
@@ -429,8 +388,8 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox2</rd:DefaultName>
-          <Top>2.35909cm</Top>
-          <Left>11.54853cm</Left>
+          <Top>2.09239cm</Top>
+          <Left>11.20986cm</Left>
           <Height>0.6cm</Height>
           <Width>5.675cm</Width>
           <ZIndex>2</ZIndex>
@@ -449,11 +408,10 @@
         <Border>
           <Style>None</Style>
         </Border>
-        <BackgroundColor>#ffc3b7</BackgroundColor>
       </Style>
     </PageHeader>
     <PageFooter>
-      <Height>1.49183cm</Height>
+      <Height>2.54cm</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
@@ -472,8 +430,8 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox3</rd:DefaultName>
-          <Top>0.48967cm</Top>
-          <Left>6.95537cm</Left>
+          <Top>0.97cm</Top>
+          <Left>7.19243cm</Left>
           <Height>0.6cm</Height>
           <Width>2.5cm</Width>
           <Style>
@@ -491,7 +449,6 @@
         <Border>
           <Style>None</Style>
         </Border>
-        <BackgroundColor>#ffc3b7</BackgroundColor>
       </Style>
     </PageFooter>
     <PageHeight>29.7cm</PageHeight>
@@ -510,7 +467,7 @@
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>c12b5da2-aed8-4f16-b6ee-97e7be7a6018</rd:DataSourceID>
+      <rd:DataSourceID>0089a031-9769-4595-88f3-9dce3c501355</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
@@ -520,42 +477,30 @@
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
-        <Field Name="CodPedido">
-          <DataField>CodPedido</DataField>
+        <Field Name="id_categoria">
+          <DataField>id_categoria</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
-        <Field Name="Fecha">
-          <DataField>Fecha</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
-        </Field>
-        <Field Name="Cliente">
-          <DataField>Cliente</DataField>
+        <Field Name="nombre">
+          <DataField>nombre</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Productos">
-          <DataField>Productos</DataField>
+        <Field Name="descripcion">
+          <DataField>descripcion</DataField>
           <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="total">
-          <DataField>total</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
         <Field Name="estado">
           <DataField>estado</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="MetodoPago">
-          <DataField>MetodoPago</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>ELAYCAFETERIADataSet</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\HP\Downloads\elay\DAL\ELAYCAFETERIADataSet.xsd</rd:SchemaPath>
-        <rd:TableName>SPMOSTRARPEDIDOS</rd:TableName>
+        <rd:SchemaPath>C:\Users\HP\Downloads\ELAY\DAL\ELAYCAFETERIADataSet.xsd</rd:SchemaPath>
+        <rd:TableName>Categoria_producto</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
-        <rd:TableAdapterName>SPMOSTRARPEDIDOSTableAdapter</rd:TableAdapterName>
+        <rd:TableAdapterName>Categoria_productoTableAdapter</rd:TableAdapterName>
       </rd:DataSetInfo>
     </DataSet>
   </DataSets>
@@ -622,5 +567,5 @@ UALRSYPrQDk0ALRR3ooAQkigdaGpKAFOKKSigCMnFITmlakGMUAJTgeKbRQA4GlpgpQaAFpaQ0tABSUU
     </EmbeddedImage>
   </EmbeddedImages>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
-  <rd:ReportID>959b5716-74b2-4e4a-89cf-eecf3d32d767</rd:ReportID>
+  <rd:ReportID>98c474b6-b04a-4f20-9077-82fa72b29eb2</rd:ReportID>
 </Report>

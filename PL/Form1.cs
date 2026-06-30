@@ -1,4 +1,5 @@
 ﻿using BRL;
+using DAL;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -297,6 +298,12 @@ namespace PL
             this.Hide();              // Oculta Form1
             ventana5.ShowDialog();            // Espera hasta que cierre Form2
             this.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Form2 FormularioReporte = new Form2();
+            FormularioReporte.ShowDialog();
         }
     }
     

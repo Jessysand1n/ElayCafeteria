@@ -23,6 +23,7 @@ namespace PL
         }
         CProductos objcli = new CProductos();
 
+        #region "no se utiliza"
         private void label2_Click(object sender, EventArgs e)
         {
 
@@ -37,7 +38,7 @@ namespace PL
         {
 
         }
-
+        #endregion
         private void Btnguardar_Click(object sender, EventArgs e)
         {
             string est = objcli.obtestado(op1, op2);
@@ -62,7 +63,7 @@ namespace PL
         private void Form1_Load(object sender, EventArgs e)
         {
             objcli.Mostrar(dgv);
-            // 2. Llenar el ComboBox de Categorías desde la BD
+            // Llenar el ComboBox de Categorías desde la BD
             DataTable dtCat = objcli.ObtenerCategorias();
             // PROPIEDADES CLAVE:
             categoria.DisplayMember = "Categoría";       // Lo que el usuario VE (ej: "Café Caliente")
@@ -102,17 +103,25 @@ namespace PL
         int fila;
         private void dgv_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            fila = e.RowIndex; //en que fila se hizo click
-            objcli.subirdatos( fila,  dgv, nombre,  op1,
-            op2,  precio,  stock,  desc,  categoria);
-            if (!string.IsNullOrEmpty(rutaImagenSeleccionada) && rutaImagenSeleccionada != "sin_imagen.png" && System.IO.File.Exists(rutaImagenSeleccionada))
+            if (e.RowIndex >= 0)
             {
-                // Usamos la ruta completa para evitar cualquier error de biblioteca
-                picProducto.Image = System.Drawing.Image.FromFile(rutaImagenSeleccionada);
-            }
-            else
-            {
-                picProducto.Image = null; // Si no hay foto, limpiamos el contenedor
+              
+                    // Usa los nombres exactos de tus controles del formulario (los que usas para guardar/modificar)
+                    rutaImagenSeleccionada = objcli.subirdatos(e.RowIndex, dgv, nombre, op1, op2, precio, stock, desc, categoria);
+
+                    // Código de carga visual corregido
+                    if (!string.IsNullOrEmpty(rutaImagenSeleccionada) && rutaImagenSeleccionada != "sin_imagen.png" && System.IO.File.Exists(rutaImagenSeleccionada))
+                    {
+                        // Cargamos de forma segura para que el archivo no se quede bloqueado en Windows
+                        using (var fs = new System.IO.FileStream(rutaImagenSeleccionada, System.IO.FileMode.Open, System.IO.FileAccess.Read))
+                        {
+                            picProducto.Image = System.Drawing.Image.FromStream(fs);
+                        }
+                    }
+                    else
+                    {
+                        picProducto.Image = null;
+                    }
             }
         }
 
@@ -151,7 +160,6 @@ namespace PL
             CATEGORIAS ventana2 = new CATEGORIAS();
             this.Hide();              // Oculta Form1
             ventana2.ShowDialog();            // Espera hasta que cierre Form2
-            this.Show();
         }
 
         private void btnExpPro_Click(object sender, EventArgs e)
@@ -300,10 +308,20 @@ namespace PL
             this.Show();
         }
 
+        private void btnfin_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
         private void button5_Click(object sender, EventArgs e)
         {
             Form2 FormularioReporte = new Form2();
             FormularioReporte.ShowDialog();
+        }
+
+        private void btnfin_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
     

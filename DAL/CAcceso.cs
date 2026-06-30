@@ -24,6 +24,8 @@ namespace DAL
         #region "Constructores"
         public CAcceso()
         {
+            Servidor = ".";
+            BaseDatos = "ELAYCAFETERIA";
             Servidor = @"DESKTOP-T0F1E46\SQLEXPRESS";
             BaseDatos = "ELAYCAFETERIA";
             Usuario = "";

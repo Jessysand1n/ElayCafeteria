@@ -289,6 +289,24 @@ namespace PL
                 picProducto.Image = Image.FromFile(rutaImagenSeleccionada);
             }
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+//melissa
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Pedidos ventana5 = new Pedidos();
+            this.Hide();              // Oculta Form1
+            ventana5.ShowDialog();            // Espera hasta que cierre Form2
+            this.Show();
+        }
     }
     
 }

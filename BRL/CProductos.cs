@@ -76,8 +76,6 @@ namespace BRL
             object[] p = new object[] { cod };
             objacc.Ejecutar("sp_EliminarProducto", p);
         }
-
-
         #endregion
 
         #region "categoria"

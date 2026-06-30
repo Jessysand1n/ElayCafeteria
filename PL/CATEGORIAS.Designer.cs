@@ -37,10 +37,10 @@
             System.Windows.Forms.Button btnActCat;
             System.Windows.Forms.Button btnImpCat;
             System.Windows.Forms.Button btnExpCat;
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.Button btnclientes;
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -66,6 +66,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.Btneliminar = new System.Windows.Forms.Button();
             this.graficoCategorias = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.button6 = new System.Windows.Forms.Button();
             button8 = new System.Windows.Forms.Button();
             button5 = new System.Windows.Forms.Button();
             button4 = new System.Windows.Forms.Button();
@@ -279,14 +280,14 @@
             this.dgvCat.BackgroundColor = System.Drawing.Color.White;
             this.dgvCat.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvCat.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCat.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCat.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvCat.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCat.EnableHeadersVisualStyles = false;
             this.dgvCat.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
@@ -496,16 +497,16 @@
             // 
             // graficoCategorias
             // 
-            chartArea1.Name = "ChartArea1";
-            this.graficoCategorias.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.graficoCategorias.Legends.Add(legend1);
+            chartArea2.Name = "ChartArea1";
+            this.graficoCategorias.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.graficoCategorias.Legends.Add(legend2);
             this.graficoCategorias.Location = new System.Drawing.Point(509, 446);
             this.graficoCategorias.Name = "graficoCategorias";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.graficoCategorias.Series.Add(series1);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.graficoCategorias.Series.Add(series2);
             this.graficoCategorias.Size = new System.Drawing.Size(537, 270);
             this.graficoCategorias.TabIndex = 21;
             this.graficoCategorias.Text = "chart1";
@@ -527,12 +528,22 @@
             btnclientes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             btnclientes.UseVisualStyleBackColor = true;
             // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(678, 26);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(75, 23);
+            this.button6.TabIndex = 25;
+            this.button6.Text = "button6";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
             // CATEGORIAS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(1354, 728);
+            this.Controls.Add(this.button6);
             this.Controls.Add(btnImpCat);
             this.Controls.Add(btnActCat);
             this.Controls.Add(btnExpCat);
@@ -586,5 +597,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button Btneliminar;
         private System.Windows.Forms.DataVisualization.Charting.Chart graficoCategorias;
+        private System.Windows.Forms.Button button6;
     }
 }

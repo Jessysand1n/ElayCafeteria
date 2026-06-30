@@ -7,6 +7,7 @@ using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace BRL
 {
@@ -35,13 +36,13 @@ namespace BRL
                 return op1.Text;
             else return op2.Text;
         }
-        public void guardar(string nom, string desc, decimal precio, int stock, string estado, int id_categoria)
+        public void guardar(string nom, string desc, decimal precio, int stock, string estado, int id_categoria, string imagen)
         {
-            object[] p = new object[] { nom, desc, precio, stock, estado, id_categoria};
+            object[] p = new object[] { nom, desc, precio, stock, estado, id_categoria, imagen};
             objacc.Ejecutar("sp_InsertarProducto", p);
         }
-        public void subirdatos(int fila, DataGridView dgv, TextBox nom, RadioButton op1,
-         RadioButton op2, TextBox precio, TextBox stock, TextBox desc, ComboBox categoria)
+        public string subirdatos(int fila, DataGridView dgv, TextBox nom, RadioButton op1,
+         RadioButton op2, TextBox precio, TextBox stock, TextBox desc, ComboBox categoria, string rutaGuardada)
         {
             // Nota: El orden de los índices de dgv[columna, fila] depende de tu procedimiento sp_ListarProductos
             nom.Text = dgv["Producto", fila].Value.ToString();
@@ -56,12 +57,18 @@ namespace BRL
                 op1.Checked = true;
             else
                 op2.Checked = true;
+
+            // Extraemos la ruta de la grilla
+            rutaGuardada = dgv["Imagen", fila].Value.ToString();
+
+            // Devolvemos la ruta hacia el Formulario
+            return rutaGuardada;
         }
 
-        public void modificar(int id_producto, string nom, string desc, decimal precio, int stock, string estado, int id_categoria)
+        public void modificar(int id_producto, string nom, string desc, decimal precio, int stock, string estado, int id_categoria, string imagen)
         {
             // REVISA ESTE ORDEN: Debe coincidir exactamente con las variables de tu SP en SQL
-            object[] p = new object[] { id_producto, nom, desc, precio, stock, estado, id_categoria };
+            object[] p = new object[] { id_producto, nom, desc, precio, stock, estado, id_categoria, imagen };
             objacc.Ejecutar("sp_EditarProducto", p);
         }
 

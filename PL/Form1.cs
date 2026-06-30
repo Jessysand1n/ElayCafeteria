@@ -41,8 +41,12 @@ namespace PL
         {
             string est = objcli.obtestado(op1, op2);
             int idCategoria = Convert.ToInt32(categoria.SelectedValue);
+            if (string.IsNullOrEmpty(rutaImagenSeleccionada))
+            {
+                rutaImagenSeleccionada = "sin_imagen.png";
+            }
             objcli.guardar(nombre.Text, desc.Text, Convert.ToDecimal(precio.Text),
-                Convert.ToInt32(stock.Text),  est, idCategoria);
+                Convert.ToInt32(stock.Text), est, idCategoria, rutaImagenSeleccionada);  
 
             nombre.Text = "";
             categoria.SelectedIndex = -1;
@@ -50,6 +54,7 @@ namespace PL
             stock.Text = "";
             desc.Text = "";
             op1.Checked = true;
+            rutaImagenSeleccionada = "";         
             objcli.Mostrar(dgv);
         }
 
@@ -76,15 +81,21 @@ namespace PL
             string est = objcli.obtestado(op1, op2);
             int idCategoria = Convert.ToInt32(categoria.SelectedValue);
             int idProducto = Convert.ToInt32(dgv.CurrentRow.Cells["ID"].Value);
+            if (string.IsNullOrEmpty(rutaImagenSeleccionada))
+            {
+                rutaImagenSeleccionada = "sin_imagen.png";
+            }
             objcli.modificar(idProducto, nombre.Text, desc.Text,
-            Convert.ToDecimal(precio.Text), Convert.ToInt32(stock.Text),est, idCategoria
+            Convert.ToDecimal(precio.Text), Convert.ToInt32(stock.Text),est, idCategoria, rutaImagenSeleccionada
         );
+            
             nombre.Text = "";
             desc.Text = "";
             precio.Text = "";
             stock.Text = "";
             categoria.SelectedIndex = -1;
             op1.Checked = true;
+            rutaImagenSeleccionada = "";          
             objcli.Mostrar(dgv);
         }
         int fila;
@@ -92,7 +103,16 @@ namespace PL
         {
             fila = e.RowIndex; //en que fila se hizo click
             objcli.subirdatos( fila,  dgv, nombre,  op1,
-          op2,  precio,  stock,  desc,  categoria);
+            op2,  precio,  stock,  desc,  categoria, rutaImagenSeleccionada);
+            if (!string.IsNullOrEmpty(rutaImagenSeleccionada) && rutaImagenSeleccionada != "sin_imagen.png" && System.IO.File.Exists(rutaImagenSeleccionada))
+            {
+                // Usamos la ruta completa para evitar cualquier error de biblioteca
+                picProducto.Image = System.Drawing.Image.FromFile(rutaImagenSeleccionada);
+            }
+            else
+            {
+                picProducto.Image = null; // Si no hay foto, limpiamos el contenedor
+            }
         }
 
         private void Btneliminar_Click(object sender, EventArgs e)

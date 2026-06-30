@@ -123,6 +123,7 @@
             btncategorias.Text = "CATEGORIAS";
             btncategorias.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             btncategorias.UseVisualStyleBackColor = true;
+            btncategorias.Click += new System.EventHandler(this.btncategorias_Click);
             // 
             // button5
             // 
@@ -191,6 +192,7 @@
             button1.Text = "PRODUCTOS";
             button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             button1.UseVisualStyleBackColor = true;
+            button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // toolStrip1
             // 

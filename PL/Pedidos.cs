@@ -207,10 +207,7 @@ namespace PL
         //
         private void button1_Click(object sender, EventArgs e)
         {
-            Form1 ventana1 = new Form1();
-            this.Hide();              // Oculta Form1
-            ventana1.ShowDialog();            // Espera hasta que cierre Form2
-            this.Show();
+            
         }
 
         private void button8_Click(object sender, EventArgs e)
@@ -218,6 +215,22 @@ namespace PL
             CATEGORIAS ventana2 = new CATEGORIAS();
             this.Hide();              // Oculta Form1
             ventana2.ShowDialog();            // Espera hasta que cierre Form2
+            this.Show();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Form1 ventana1 = new Form1();
+            this.Hide();              // Oculta Form1
+            ventana1.ShowDialog();            // Espera hasta que cierre Form2
+
+        }
+
+        private void btncategorias_Click(object sender, EventArgs e)
+        {
+            CATEGORIAS categoria = new CATEGORIAS();
+            this.Hide();              // Oculta Form1
+            categoria.ShowDialog();            // Espera hasta que cierre Form2
             this.Show();
         }
     }

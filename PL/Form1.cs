@@ -297,7 +297,10 @@ namespace PL
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Form1 ventana1 = new Form1();
+            this.Hide();              // Oculta Form1
+            ventana1.ShowDialog();            // Espera hasta que cierre Form2
+            this.Show();
         }
 //melissa
         private void button4_Click(object sender, EventArgs e)
@@ -305,7 +308,6 @@ namespace PL
             Pedidos ventana5 = new Pedidos();
             this.Hide();              // Oculta Form1
             ventana5.ShowDialog();            // Espera hasta que cierre Form2
-            this.Show();
         }
 
         private void btnfin_Click(object sender, EventArgs e)
@@ -322,6 +324,12 @@ namespace PL
         private void btnfin_Click_1(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void button5_Click_1(object sender, EventArgs e)
+        {
+            Form2 FormularioReporte = new Form2();
+            FormularioReporte.ShowDialog();
         }
     }
     

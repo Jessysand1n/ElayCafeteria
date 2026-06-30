@@ -35,12 +35,14 @@
             System.Windows.Forms.Button btnImpPro;
             System.Windows.Forms.Button button8;
             System.Windows.Forms.Button btnclientes;
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.button3 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.logo = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnfin = new System.Windows.Forms.Button();
             this.Btneliminar = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.btnsubirImg = new System.Windows.Forms.Button();
@@ -80,8 +82,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.docImprimir = new System.Drawing.Printing.PrintDocument();
-            this.logo = new System.Windows.Forms.PictureBox();
-            this.btnfin = new System.Windows.Forms.Button();
             button4 = new System.Windows.Forms.Button();
             button5 = new System.Windows.Forms.Button();
             button1 = new System.Windows.Forms.Button();
@@ -90,6 +90,7 @@
             button8 = new System.Windows.Forms.Button();
             btnclientes = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picProducto)).BeginInit();
@@ -98,24 +99,7 @@
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             this.SuspendLayout();
-            // 
-            // button3
-            // 
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(38, 451);
-            this.button3.Name = "button3";
-            this.button3.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.button3.Size = new System.Drawing.Size(157, 50);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "USUARIOS";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
@@ -149,6 +133,7 @@
             button5.Text = "REPORTES";
             button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             button5.UseVisualStyleBackColor = true;
+            button5.Click += new System.EventHandler(this.button5_Click_1);
             // 
             // button1
             // 
@@ -234,6 +219,22 @@
             btnclientes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             btnclientes.UseVisualStyleBackColor = true;
             // 
+            // button3
+            // 
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.Location = new System.Drawing.Point(38, 451);
+            this.button3.Name = "button3";
+            this.button3.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.button3.Size = new System.Drawing.Size(157, 50);
+            this.button3.TabIndex = 4;
+            this.button3.Text = "USUARIOS";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.UseVisualStyleBackColor = true;
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -250,6 +251,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(240, 780);
             this.panel1.TabIndex = 1;
+            // 
+            // logo
+            // 
+            this.logo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("logo.BackgroundImage")));
+            this.logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.logo.ErrorImage = ((System.Drawing.Image)(resources.GetObject("logo.ErrorImage")));
+            this.logo.Location = new System.Drawing.Point(38, 14);
+            this.logo.Name = "logo";
+            this.logo.Size = new System.Drawing.Size(154, 132);
+            this.logo.TabIndex = 9;
+            this.logo.TabStop = false;
             // 
             // label1
             // 
@@ -282,6 +294,17 @@
             this.panel2.Size = new System.Drawing.Size(1212, 780);
             this.panel2.TabIndex = 2;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // btnfin
+            // 
+            this.btnfin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnfin.BackgroundImage")));
+            this.btnfin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnfin.Location = new System.Drawing.Point(1149, 9);
+            this.btnfin.Name = "btnfin";
+            this.btnfin.Size = new System.Drawing.Size(51, 40);
+            this.btnfin.TabIndex = 26;
+            this.btnfin.UseVisualStyleBackColor = true;
+            this.btnfin.Click += new System.EventHandler(this.btnfin_Click_1);
             // 
             // Btneliminar
             // 
@@ -699,28 +722,6 @@
             this.label2.Text = "PRODUCTOS";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // logo
-            // 
-            this.logo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("logo.BackgroundImage")));
-            this.logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.logo.ErrorImage = ((System.Drawing.Image)(resources.GetObject("logo.ErrorImage")));
-            this.logo.Location = new System.Drawing.Point(38, 14);
-            this.logo.Name = "logo";
-            this.logo.Size = new System.Drawing.Size(154, 132);
-            this.logo.TabIndex = 9;
-            this.logo.TabStop = false;
-            // 
-            // btnfin
-            // 
-            this.btnfin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnfin.BackgroundImage")));
-            this.btnfin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnfin.Location = new System.Drawing.Point(1149, 9);
-            this.btnfin.Name = "btnfin";
-            this.btnfin.Size = new System.Drawing.Size(51, 40);
-            this.btnfin.TabIndex = 26;
-            this.btnfin.UseVisualStyleBackColor = true;
-            this.btnfin.Click += new System.EventHandler(this.btnfin_Click_1);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
@@ -737,6 +738,7 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel6.ResumeLayout(false);
@@ -751,7 +753,6 @@
             this.panel5.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             this.ResumeLayout(false);
 
         }

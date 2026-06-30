@@ -25,7 +25,7 @@ namespace DAL
         public CAcceso()
         {
             Servidor = ".";
-            BaseDatos = "avance";
+            BaseDatos = "ELAYCAFETERIA";
             Usuario = "";
             Password = "";
             ModoMixto = false;

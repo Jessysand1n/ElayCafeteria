@@ -8,7 +8,7 @@ namespace BRL
 {
     public class CPedidos
     {
-        PAcceso ObjAcc = new PAcceso();
+        CAcceso ObjAcc = new CAcceso();
 
         public void Mostrar(DataGridView dgvPedidos)
         {

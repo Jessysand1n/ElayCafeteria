@@ -177,6 +177,19 @@ namespace PL
                 }
             }
         }
+
+        private void btnpedidos_Click(object sender, EventArgs e)
+        {
+            Pedidos ventana5 = new Pedidos();
+            this.Hide();              // Oculta Form1
+            ventana5.ShowDialog();            // Espera hasta que cierre Form2
+            this.Show();
+        }
+
+        private void btnfin_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
     
 }

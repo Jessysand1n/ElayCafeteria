@@ -159,7 +159,6 @@ namespace PL
             CATEGORIAS ventana2 = new CATEGORIAS();
             this.Hide();              // Oculta Form1
             ventana2.ShowDialog();            // Espera hasta que cierre Form2
-            this.Show();
         }
 
         private void btnExpPro_Click(object sender, EventArgs e)
@@ -306,6 +305,11 @@ namespace PL
             this.Hide();              // Oculta Form1
             ventana5.ShowDialog();            // Espera hasta que cierre Form2
             this.Show();
+        }
+
+        private void btnfin_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
     

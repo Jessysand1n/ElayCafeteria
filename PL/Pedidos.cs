@@ -33,7 +33,7 @@ namespace PL
             }
             ResumenDgv.DataSource = dtResumen;
             ObjPed.CargarCombo(Cliente, "SPMOSTRARCLIENTES", "nombre_completo", "id_cliente");
-            ObjPed.CargarCombo(Producto, "SPMOSTRARPRODUCTOS", "nombre", "id_producto");
+            ObjPed.CargarCombo(Producto, "sp_ListarProductos", "Producto", "ID_Cat");
             ObjPed.CargarCombo(MetodoDePago, "SPMOSTRARMETODOPAGO", "nombre", "id_metodo_pago");
 
             Estado.Items.Add("ACTIVO");

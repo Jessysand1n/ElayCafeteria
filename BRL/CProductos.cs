@@ -111,7 +111,7 @@ namespace BRL
             nom.Text = dgvCat["Categoría", fila].Value.ToString();
             desc.Text = dgvCat["Descripción", fila].Value.ToString();
             
-            if (dgvCat["Estado", fila].Value.ToString().ToUpper() == "ACTIVO")
+            if (dgvCat["estado", fila].Value.ToString().ToUpper() == "ACTIVO")
                 op1Cat.Checked = true;
             else
                 op2Cat.Checked = true;

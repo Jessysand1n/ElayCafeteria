@@ -30,11 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pedidos));
             System.Windows.Forms.Button btnclientes;
-            System.Windows.Forms.Button button8;
+            System.Windows.Forms.Button btncategorias;
             System.Windows.Forms.Button button5;
-            System.Windows.Forms.Button button4;
+            System.Windows.Forms.Button btnpedidos;
             System.Windows.Forms.Button button3;
-            System.Windows.Forms.Button button2;
             System.Windows.Forms.Button button1;
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.BtnGuardar = new System.Windows.Forms.ToolStripButton();
@@ -61,6 +60,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.reporte = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.MetodoDePago = new System.Windows.Forms.ComboBox();
@@ -71,14 +71,12 @@
             this.Eliminar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label10 = new System.Windows.Forms.Label();
+            this.logo = new System.Windows.Forms.PictureBox();
             btnclientes = new System.Windows.Forms.Button();
-            button8 = new System.Windows.Forms.Button();
+            btncategorias = new System.Windows.Forms.Button();
             button5 = new System.Windows.Forms.Button();
-            button4 = new System.Windows.Forms.Button();
+            btnpedidos = new System.Windows.Forms.Button();
             button3 = new System.Windows.Forms.Button();
-            button2 = new System.Windows.Forms.Button();
             button1 = new System.Windows.Forms.Button();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPedidos)).BeginInit();
@@ -89,12 +87,13 @@
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ResumenDgv)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             this.SuspendLayout();
             // 
             // toolStrip1
             // 
             this.toolStrip1.BackColor = System.Drawing.Color.BurlyWood;
+            this.toolStrip1.Dock = System.Windows.Forms.DockStyle.None;
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.BtnGuardar,
@@ -103,9 +102,9 @@
             this.toolStripLabel1,
             this.Buscar,
             this.Fin});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip1.Location = new System.Drawing.Point(192, 9);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1452, 47);
+            this.toolStrip1.Size = new System.Drawing.Size(413, 47);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             this.toolStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip1_ItemClicked);
@@ -168,13 +167,13 @@
             // 
             // dgvPedidos
             // 
-            this.dgvPedidos.BackgroundColor = System.Drawing.Color.Goldenrod;
+            this.dgvPedidos.BackgroundColor = System.Drawing.Color.FloralWhite;
             this.dgvPedidos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPedidos.Location = new System.Drawing.Point(192, 383);
+            this.dgvPedidos.Location = new System.Drawing.Point(192, 435);
             this.dgvPedidos.Name = "dgvPedidos";
             this.dgvPedidos.RowHeadersWidth = 51;
             this.dgvPedidos.RowTemplate.Height = 24;
-            this.dgvPedidos.Size = new System.Drawing.Size(1228, 323);
+            this.dgvPedidos.Size = new System.Drawing.Size(1248, 323);
             this.dgvPedidos.TabIndex = 1;
             this.dgvPedidos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPedidos_CellClick);
             this.dgvPedidos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -182,7 +181,7 @@
             // groupBox1
             // 
             this.groupBox1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.groupBox1.BackColor = System.Drawing.Color.Goldenrod;
+            this.groupBox1.BackColor = System.Drawing.Color.BurlyWood;
             this.groupBox1.Controls.Add(this.BtnNuevo);
             this.groupBox1.Controls.Add(this.Fecha);
             this.groupBox1.Controls.Add(this.Estado);
@@ -192,9 +191,9 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.groupBox3);
             this.groupBox1.Font = new System.Drawing.Font("Cooper Black", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(182, 50);
+            this.groupBox1.Location = new System.Drawing.Point(192, 74);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(350, 299);
+            this.groupBox1.Size = new System.Drawing.Size(350, 337);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "DATOS DE UN PEDIDO";
@@ -202,10 +201,10 @@
             // 
             // BtnNuevo
             // 
-            this.BtnNuevo.BackColor = System.Drawing.Color.PeachPuff;
+            this.BtnNuevo.BackColor = System.Drawing.Color.Peru;
             this.BtnNuevo.Location = new System.Drawing.Point(12, 117);
             this.BtnNuevo.Name = "BtnNuevo";
-            this.BtnNuevo.Size = new System.Drawing.Size(298, 23);
+            this.BtnNuevo.Size = new System.Drawing.Size(298, 35);
             this.BtnNuevo.TabIndex = 13;
             this.BtnNuevo.Text = "NUEVO PEDIDO";
             this.BtnNuevo.UseVisualStyleBackColor = false;
@@ -284,9 +283,9 @@
             this.groupBox3.Controls.Add(this.PrecioUnitario);
             this.groupBox3.Controls.Add(this.label5);
             this.groupBox3.Controls.Add(this.label4);
-            this.groupBox3.Location = new System.Drawing.Point(12, 146);
+            this.groupBox3.Location = new System.Drawing.Point(12, 158);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(328, 147);
+            this.groupBox3.Size = new System.Drawing.Size(328, 171);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "AGREGAR PRODUCTOS";
@@ -294,7 +293,7 @@
             // 
             // Cantidad
             // 
-            this.Cantidad.Location = new System.Drawing.Point(105, 52);
+            this.Cantidad.Location = new System.Drawing.Point(159, 56);
             this.Cantidad.Name = "Cantidad";
             this.Cantidad.Size = new System.Drawing.Size(62, 25);
             this.Cantidad.TabIndex = 12;
@@ -308,7 +307,7 @@
             // Producto
             // 
             this.Producto.FormattingEnabled = true;
-            this.Producto.Location = new System.Drawing.Point(104, 21);
+            this.Producto.Location = new System.Drawing.Point(159, 21);
             this.Producto.Name = "Producto";
             this.Producto.Size = new System.Drawing.Size(121, 25);
             this.Producto.TabIndex = 11;
@@ -316,10 +315,10 @@
             // 
             // AgregarProducto
             // 
-            this.AgregarProducto.BackColor = System.Drawing.Color.Goldenrod;
-            this.AgregarProducto.Location = new System.Drawing.Point(42, 116);
+            this.AgregarProducto.BackColor = System.Drawing.Color.Peru;
+            this.AgregarProducto.Location = new System.Drawing.Point(42, 129);
             this.AgregarProducto.Name = "AgregarProducto";
-            this.AgregarProducto.Size = new System.Drawing.Size(231, 25);
+            this.AgregarProducto.Size = new System.Drawing.Size(231, 36);
             this.AgregarProducto.TabIndex = 10;
             this.AgregarProducto.Text = "+ AGREGAR PRODUCTO";
             this.AgregarProducto.UseVisualStyleBackColor = false;
@@ -330,7 +329,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Cooper Black", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label6.Location = new System.Drawing.Point(6, 86);
+            this.label6.Location = new System.Drawing.Point(6, 99);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(147, 20);
             this.label6.TabIndex = 9;
@@ -338,7 +337,7 @@
             // 
             // PrecioUnitario
             // 
-            this.PrecioUnitario.Location = new System.Drawing.Point(159, 85);
+            this.PrecioUnitario.Location = new System.Drawing.Point(159, 98);
             this.PrecioUnitario.Name = "PrecioUnitario";
             this.PrecioUnitario.ReadOnly = true;
             this.PrecioUnitario.Size = new System.Drawing.Size(98, 25);
@@ -350,7 +349,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Cooper Black", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label5.Location = new System.Drawing.Point(6, 55);
+            this.label5.Location = new System.Drawing.Point(6, 59);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(93, 20);
             this.label5.TabIndex = 7;
@@ -361,7 +360,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Cooper Black", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(6, 21);
+            this.label4.Location = new System.Drawing.Point(6, 26);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(95, 20);
             this.label4.TabIndex = 5;
@@ -370,19 +369,28 @@
             // groupBox2
             // 
             this.groupBox2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.groupBox2.BackColor = System.Drawing.Color.Goldenrod;
+            this.groupBox2.BackColor = System.Drawing.Color.BurlyWood;
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.reporte);
             this.groupBox2.Controls.Add(this.groupBox4);
             this.groupBox2.Controls.Add(this.ResumenDgv);
             this.groupBox2.Font = new System.Drawing.Font("Cooper Black", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(537, 50);
+            this.groupBox2.Location = new System.Drawing.Point(548, 74);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(915, 299);
+            this.groupBox2.Size = new System.Drawing.Size(892, 337);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "RESUMEN DEL PEDIDO";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(551, 279);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(85, 17);
+            this.label10.TabIndex = 5;
+            this.label10.Text = "REPORTE";
             // 
             // reporte
             // 
@@ -458,7 +466,7 @@
             this.ResumenDgv.Name = "ResumenDgv";
             this.ResumenDgv.RowHeadersWidth = 51;
             this.ResumenDgv.RowTemplate.Height = 24;
-            this.ResumenDgv.Size = new System.Drawing.Size(892, 142);
+            this.ResumenDgv.Size = new System.Drawing.Size(869, 142);
             this.ResumenDgv.TabIndex = 2;
             this.ResumenDgv.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ResumenDgv_CellContentClick);
             // 
@@ -474,18 +482,17 @@
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel1.Controls.Add(btnclientes);
-            this.panel1.Controls.Add(button8);
+            this.panel1.Controls.Add(btncategorias);
             this.panel1.Controls.Add(button5);
-            this.panel1.Controls.Add(button4);
+            this.panel1.Controls.Add(btnpedidos);
             this.panel1.Controls.Add(button3);
-            this.panel1.Controls.Add(button2);
             this.panel1.Controls.Add(button1);
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.logo);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 47);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(181, 662);
+            this.panel1.Size = new System.Drawing.Size(186, 780);
             this.panel1.TabIndex = 4;
             // 
             // btnclientes
@@ -493,154 +500,138 @@
             btnclientes.FlatAppearance.BorderSize = 0;
             btnclientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
             btnclientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btnclientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             btnclientes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
             btnclientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            btnclientes.Location = new System.Drawing.Point(34, 507);
+            btnclientes.Location = new System.Drawing.Point(12, 483);
             btnclientes.Name = "btnclientes";
             btnclientes.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            btnclientes.Size = new System.Drawing.Size(111, 50);
-            btnclientes.TabIndex = 8;
+            btnclientes.Size = new System.Drawing.Size(122, 50);
+            btnclientes.TabIndex = 9;
             btnclientes.Text = "CLIENTES";
             btnclientes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             btnclientes.UseVisualStyleBackColor = true;
             // 
-            // button8
+            // btncategorias
             // 
-            button8.FlatAppearance.BorderSize = 0;
-            button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
-            button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
-            button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            button8.Location = new System.Drawing.Point(25, 221);
-            button8.Name = "button8";
-            button8.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            button8.Size = new System.Drawing.Size(138, 50);
-            button8.TabIndex = 7;
-            button8.Text = "CATEGORIAS";
-            button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            button8.UseVisualStyleBackColor = true;
-            button8.Click += new System.EventHandler(this.button8_Click);
+            btncategorias.FlatAppearance.BorderSize = 0;
+            btncategorias.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
+            btncategorias.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btncategorias.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            btncategorias.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
+            btncategorias.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            btncategorias.Location = new System.Drawing.Point(12, 291);
+            btncategorias.Name = "btncategorias";
+            btncategorias.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            btncategorias.Size = new System.Drawing.Size(151, 50);
+            btncategorias.TabIndex = 7;
+            btncategorias.Text = "CATEGORIAS";
+            btncategorias.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            btncategorias.UseVisualStyleBackColor = true;
             // 
             // button5
             // 
             button5.FlatAppearance.BorderSize = 0;
             button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
             button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
             button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            button5.Location = new System.Drawing.Point(34, 563);
+            button5.Location = new System.Drawing.Point(12, 551);
             button5.Name = "button5";
             button5.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            button5.Size = new System.Drawing.Size(111, 50);
+            button5.Size = new System.Drawing.Size(134, 50);
             button5.TabIndex = 6;
             button5.Text = "REPORTES";
             button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             button5.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnpedidos
             // 
-            button4.FlatAppearance.BorderSize = 0;
-            button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
-            button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
-            button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            button4.Location = new System.Drawing.Point(34, 435);
-            button4.Name = "button4";
-            button4.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            button4.Size = new System.Drawing.Size(111, 50);
-            button4.TabIndex = 5;
-            button4.Text = "PEDIDOS";
-            button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            button4.UseVisualStyleBackColor = true;
+            btnpedidos.FlatAppearance.BorderSize = 0;
+            btnpedidos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
+            btnpedidos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btnpedidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            btnpedidos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
+            btnpedidos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            btnpedidos.Location = new System.Drawing.Point(12, 353);
+            btnpedidos.Name = "btnpedidos";
+            btnpedidos.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            btnpedidos.Size = new System.Drawing.Size(111, 50);
+            btnpedidos.TabIndex = 5;
+            btnpedidos.Text = "PEDIDOS";
+            btnpedidos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            btnpedidos.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
             button3.FlatAppearance.BorderSize = 0;
             button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
             button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
             button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            button3.Location = new System.Drawing.Point(16, 359);
+            button3.Location = new System.Drawing.Point(12, 427);
             button3.Name = "button3";
             button3.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            button3.Size = new System.Drawing.Size(157, 50);
+            button3.Size = new System.Drawing.Size(171, 50);
             button3.TabIndex = 4;
-            button3.Text = "TRABAJADORES";
+            button3.Text = "USUARIOS";
             button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             button3.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            button2.FlatAppearance.BorderSize = 0;
-            button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
-            button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
-            button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            button2.Location = new System.Drawing.Point(34, 294);
-            button2.Name = "button2";
-            button2.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            button2.Size = new System.Drawing.Size(111, 50);
-            button2.TabIndex = 3;
-            button2.Text = "VENTAS";
-            button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            button2.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
             button1.FlatAppearance.BorderSize = 0;
             button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
             button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
             button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            button1.Location = new System.Drawing.Point(25, 149);
+            button1.Location = new System.Drawing.Point(14, 232);
             button1.Name = "button1";
             button1.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            button1.Size = new System.Drawing.Size(138, 50);
+            button1.Size = new System.Drawing.Size(151, 50);
             button1.TabIndex = 2;
             button1.Text = "PRODUCTOS";
             button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             button1.UseVisualStyleBackColor = true;
-            button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(57, 83);
+            this.label7.Location = new System.Drawing.Point(65, 174);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(64, 28);
             this.label7.TabIndex = 1;
             this.label7.Text = "ELAY!";
             // 
-            // pictureBox1
+            // logo
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(16, 22);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(151, 58);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(551, 279);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(85, 17);
-            this.label10.TabIndex = 5;
-            this.label10.Text = "REPORTE";
+            this.logo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("logo.BackgroundImage")));
+            this.logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.logo.ErrorImage = ((System.Drawing.Image)(resources.GetObject("logo.ErrorImage")));
+            this.logo.Location = new System.Drawing.Point(29, 12);
+            this.logo.Name = "logo";
+            this.logo.Size = new System.Drawing.Size(136, 118);
+            this.logo.TabIndex = 0;
+            this.logo.TabStop = false;
             // 
             // Pedidos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.PeachPuff;
-            this.ClientSize = new System.Drawing.Size(1452, 709);
+            this.BackColor = System.Drawing.Color.Bisque;
+            this.ClientSize = new System.Drawing.Size(1452, 780);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dgvPedidos);
             this.Controls.Add(this.toolStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Pedidos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.toolStrip1.ResumeLayout(false);
@@ -658,7 +649,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ResumenDgv)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -699,10 +690,10 @@
         private System.Windows.Forms.Button BtnNuevo;
         private System.Windows.Forms.Button reporte;
         private System.Windows.Forms.DataGridViewButtonColumn Eliminar;
+        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.PictureBox logo;
     }
 }
 

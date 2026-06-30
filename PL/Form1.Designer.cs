@@ -28,8 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.Button button2;
-            System.Windows.Forms.Button button3;
+            System.Windows.Forms.Button btnusuarios;
             System.Windows.Forms.Button button4;
             System.Windows.Forms.Button button5;
             System.Windows.Forms.Button button1;
@@ -37,12 +36,11 @@
             System.Windows.Forms.Button btnImpPro;
             System.Windows.Forms.Button button8;
             System.Windows.Forms.Button btnclientes;
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button6 = new System.Windows.Forms.Button();
             this.Btneliminar = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.btnsubirImg = new System.Windows.Forms.Button();
@@ -82,8 +80,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.docImprimir = new System.Drawing.Printing.PrintDocument();
-            button2 = new System.Windows.Forms.Button();
-            button3 = new System.Windows.Forms.Button();
+            this.btnfin = new System.Windows.Forms.Button();
+            this.logo = new System.Windows.Forms.PictureBox();
+            btnusuarios = new System.Windows.Forms.Button();
             button4 = new System.Windows.Forms.Button();
             button5 = new System.Windows.Forms.Button();
             button1 = new System.Windows.Forms.Button();
@@ -92,7 +91,6 @@
             button8 = new System.Windows.Forms.Button();
             btnclientes = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picProducto)).BeginInit();
@@ -101,39 +99,24 @@
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             this.SuspendLayout();
             // 
-            // button2
+            // btnusuarios
             // 
-            button2.FlatAppearance.BorderSize = 0;
-            button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
-            button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
-            button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            button2.Location = new System.Drawing.Point(35, 312);
-            button2.Name = "button2";
-            button2.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            button2.Size = new System.Drawing.Size(111, 50);
-            button2.TabIndex = 3;
-            button2.Text = "VENTAS";
-            button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            button3.FlatAppearance.BorderSize = 0;
-            button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
-            button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
-            button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            button3.Location = new System.Drawing.Point(35, 388);
-            button3.Name = "button3";
-            button3.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            button3.Size = new System.Drawing.Size(157, 50);
-            button3.TabIndex = 4;
-            button3.Text = "TRABAJADORES";
-            button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            button3.UseVisualStyleBackColor = true;
+            btnusuarios.FlatAppearance.BorderSize = 0;
+            btnusuarios.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
+            btnusuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btnusuarios.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
+            btnusuarios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            btnusuarios.Location = new System.Drawing.Point(34, 518);
+            btnusuarios.Name = "btnusuarios";
+            btnusuarios.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            btnusuarios.Size = new System.Drawing.Size(157, 50);
+            btnusuarios.TabIndex = 4;
+            btnusuarios.Text = "USUARIOS";
+            btnusuarios.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            btnusuarios.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
@@ -142,7 +125,7 @@
             button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
             button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            button4.Location = new System.Drawing.Point(62, 470);
+            button4.Location = new System.Drawing.Point(34, 442);
             button4.Name = "button4";
             button4.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             button4.Size = new System.Drawing.Size(111, 50);
@@ -159,7 +142,7 @@
             button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
             button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            button5.Location = new System.Drawing.Point(34, 610);
+            button5.Location = new System.Drawing.Point(34, 654);
             button5.Name = "button5";
             button5.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             button5.Size = new System.Drawing.Size(111, 50);
@@ -175,7 +158,7 @@
             button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
             button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            button1.Location = new System.Drawing.Point(35, 165);
+            button1.Location = new System.Drawing.Point(34, 295);
             button1.Name = "button1";
             button1.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             button1.Size = new System.Drawing.Size(138, 50);
@@ -226,7 +209,7 @@
             button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             button8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
             button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            button8.Location = new System.Drawing.Point(35, 244);
+            button8.Location = new System.Drawing.Point(34, 374);
             button8.Name = "button8";
             button8.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             button8.Size = new System.Drawing.Size(138, 50);
@@ -243,7 +226,7 @@
             btnclientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             btnclientes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
             btnclientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            btnclientes.Location = new System.Drawing.Point(35, 541);
+            btnclientes.Location = new System.Drawing.Point(34, 582);
             btnclientes.Name = "btnclientes";
             btnclientes.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             btnclientes.Size = new System.Drawing.Size(111, 50);
@@ -255,15 +238,14 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel1.Controls.Add(this.logo);
             this.panel1.Controls.Add(btnclientes);
             this.panel1.Controls.Add(button8);
             this.panel1.Controls.Add(button5);
             this.panel1.Controls.Add(button4);
-            this.panel1.Controls.Add(button3);
-            this.panel1.Controls.Add(button2);
+            this.panel1.Controls.Add(btnusuarios);
             this.panel1.Controls.Add(button1);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -274,24 +256,18 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(81, 104);
+            this.label1.Location = new System.Drawing.Point(80, 234);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(64, 28);
             this.label1.TabIndex = 1;
             this.label1.Text = "ELAY!";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(35, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(151, 58);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.AutoSize = true;
+            this.panel2.BackColor = System.Drawing.Color.Bisque;
+            this.panel2.Controls.Add(this.btnfin);
             this.panel2.Controls.Add(this.Btneliminar);
             this.panel2.Controls.Add(btnImpPro);
             this.panel2.Controls.Add(btnExpPro);
@@ -302,21 +278,11 @@
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.panel5);
             this.panel2.Controls.Add(this.panel3);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(240, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1155, 780);
+            this.panel2.Size = new System.Drawing.Size(1212, 780);
             this.panel2.TabIndex = 2;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(198, 323);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 11;
-            this.button6.Text = "button6";
-            this.button6.UseVisualStyleBackColor = true;
             // 
             // Btneliminar
             // 
@@ -353,7 +319,7 @@
             this.panel6.Controls.Add(this.label15);
             this.panel6.Controls.Add(this.label14);
             this.panel6.Controls.Add(this.label9);
-            this.panel6.Location = new System.Drawing.Point(724, 181);
+            this.panel6.Location = new System.Drawing.Point(770, 181);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(409, 567);
             this.panel6.TabIndex = 6;
@@ -373,9 +339,9 @@
             // 
             // picProducto
             // 
-            this.picProducto.Location = new System.Drawing.Point(196, 320);
+            this.picProducto.Location = new System.Drawing.Point(230, 337);
             this.picProducto.Name = "picProducto";
-            this.picProducto.Size = new System.Drawing.Size(185, 159);
+            this.picProducto.Size = new System.Drawing.Size(149, 119);
             this.picProducto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picProducto.TabIndex = 21;
             this.picProducto.TabStop = false;
@@ -566,7 +532,7 @@
             this.buscar});
             this.toolStrip1.Location = new System.Drawing.Point(20, 211);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(370, 31);
+            this.toolStrip1.Size = new System.Drawing.Size(370, 28);
             this.toolStrip1.TabIndex = 5;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -615,14 +581,14 @@
             this.dgv.BackgroundColor = System.Drawing.Color.White;
             this.dgv.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgv.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv.EnableHeadersVisualStyles = false;
             this.dgv.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
@@ -632,7 +598,7 @@
             this.dgv.RowHeadersWidth = 51;
             this.dgv.RowTemplate.Height = 24;
             this.dgv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv.Size = new System.Drawing.Size(680, 470);
+            this.dgv.Size = new System.Drawing.Size(732, 470);
             this.dgv.TabIndex = 3;
             this.dgv.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_CellClick);
             this.dgv.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_CellContentClick);
@@ -734,22 +700,44 @@
             this.label2.Text = "PRODUCTOS";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
+            // btnfin
+            // 
+            this.btnfin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnfin.BackgroundImage")));
+            this.btnfin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnfin.Location = new System.Drawing.Point(1149, 9);
+            this.btnfin.Name = "btnfin";
+            this.btnfin.Size = new System.Drawing.Size(51, 40);
+            this.btnfin.TabIndex = 11;
+            this.btnfin.UseVisualStyleBackColor = true;
+            this.btnfin.Click += new System.EventHandler(this.btnfin_Click);
+            // 
+            // logo
+            // 
+            this.logo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("logo.BackgroundImage")));
+            this.logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.logo.ErrorImage = ((System.Drawing.Image)(resources.GetObject("logo.ErrorImage")));
+            this.logo.Location = new System.Drawing.Point(43, 26);
+            this.logo.Name = "logo";
+            this.logo.Size = new System.Drawing.Size(165, 138);
+            this.logo.TabIndex = 9;
+            this.logo.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
-            this.ClientSize = new System.Drawing.Size(1395, 780);
+            this.ClientSize = new System.Drawing.Size(1452, 780);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel6.ResumeLayout(false);
@@ -764,7 +752,9 @@
             this.panel5.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -772,7 +762,6 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label2;
@@ -813,6 +802,7 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.PictureBox picProducto;
         private System.Windows.Forms.Button btnsubirImg;
+        private System.Windows.Forms.Button btnfin;
+        private System.Windows.Forms.PictureBox logo;
     }
 }
-

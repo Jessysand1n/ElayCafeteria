@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pedidos));
             System.Windows.Forms.Button btnclientes;
             System.Windows.Forms.Button btncategorias;
             System.Windows.Forms.Button button5;
             System.Windows.Forms.Button btnpedidos;
             System.Windows.Forms.Button button3;
             System.Windows.Forms.Button button1;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pedidos));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.BtnGuardar = new System.Windows.Forms.ToolStripButton();
             this.BtnModificar = new System.Windows.Forms.ToolStripButton();
@@ -89,6 +89,108 @@
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             this.SuspendLayout();
+            // 
+            // btnclientes
+            // 
+            btnclientes.FlatAppearance.BorderSize = 0;
+            btnclientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
+            btnclientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btnclientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            btnclientes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
+            btnclientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            btnclientes.Location = new System.Drawing.Point(12, 495);
+            btnclientes.Name = "btnclientes";
+            btnclientes.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            btnclientes.Size = new System.Drawing.Size(122, 50);
+            btnclientes.TabIndex = 9;
+            btnclientes.Text = "CLIENTES";
+            btnclientes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            btnclientes.UseVisualStyleBackColor = true;
+            // 
+            // btncategorias
+            // 
+            btncategorias.FlatAppearance.BorderSize = 0;
+            btncategorias.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
+            btncategorias.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btncategorias.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            btncategorias.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
+            btncategorias.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            btncategorias.Location = new System.Drawing.Point(12, 291);
+            btncategorias.Name = "btncategorias";
+            btncategorias.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            btncategorias.Size = new System.Drawing.Size(151, 50);
+            btncategorias.TabIndex = 7;
+            btncategorias.Text = "CATEGORIAS";
+            btncategorias.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            btncategorias.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            button5.FlatAppearance.BorderSize = 0;
+            button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
+            button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
+            button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            button5.Location = new System.Drawing.Point(14, 573);
+            button5.Name = "button5";
+            button5.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            button5.Size = new System.Drawing.Size(134, 50);
+            button5.TabIndex = 6;
+            button5.Text = "REPORTES";
+            button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            button5.UseVisualStyleBackColor = true;
+            // 
+            // btnpedidos
+            // 
+            btnpedidos.FlatAppearance.BorderSize = 0;
+            btnpedidos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
+            btnpedidos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btnpedidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            btnpedidos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
+            btnpedidos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            btnpedidos.Location = new System.Drawing.Point(12, 361);
+            btnpedidos.Name = "btnpedidos";
+            btnpedidos.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            btnpedidos.Size = new System.Drawing.Size(111, 50);
+            btnpedidos.TabIndex = 5;
+            btnpedidos.Text = "PEDIDOS";
+            btnpedidos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            btnpedidos.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            button3.FlatAppearance.BorderSize = 0;
+            button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
+            button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
+            button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            button3.Location = new System.Drawing.Point(12, 427);
+            button3.Name = "button3";
+            button3.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            button3.Size = new System.Drawing.Size(171, 50);
+            button3.TabIndex = 4;
+            button3.Text = "USUARIOS";
+            button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            button3.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
+            button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
+            button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            button1.Location = new System.Drawing.Point(14, 232);
+            button1.Name = "button1";
+            button1.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            button1.Size = new System.Drawing.Size(151, 50);
+            button1.TabIndex = 2;
+            button1.Text = "PRODUCTOS";
+            button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            button1.UseVisualStyleBackColor = true;
             // 
             // toolStrip1
             // 
@@ -495,113 +597,11 @@
             this.panel1.Size = new System.Drawing.Size(186, 780);
             this.panel1.TabIndex = 4;
             // 
-            // btnclientes
-            // 
-            btnclientes.FlatAppearance.BorderSize = 0;
-            btnclientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
-            btnclientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btnclientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            btnclientes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
-            btnclientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            btnclientes.Location = new System.Drawing.Point(12, 483);
-            btnclientes.Name = "btnclientes";
-            btnclientes.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            btnclientes.Size = new System.Drawing.Size(122, 50);
-            btnclientes.TabIndex = 9;
-            btnclientes.Text = "CLIENTES";
-            btnclientes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            btnclientes.UseVisualStyleBackColor = true;
-            // 
-            // btncategorias
-            // 
-            btncategorias.FlatAppearance.BorderSize = 0;
-            btncategorias.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
-            btncategorias.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btncategorias.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            btncategorias.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
-            btncategorias.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            btncategorias.Location = new System.Drawing.Point(12, 291);
-            btncategorias.Name = "btncategorias";
-            btncategorias.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            btncategorias.Size = new System.Drawing.Size(151, 50);
-            btncategorias.TabIndex = 7;
-            btncategorias.Text = "CATEGORIAS";
-            btncategorias.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            btncategorias.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            button5.FlatAppearance.BorderSize = 0;
-            button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
-            button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
-            button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            button5.Location = new System.Drawing.Point(12, 551);
-            button5.Name = "button5";
-            button5.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            button5.Size = new System.Drawing.Size(134, 50);
-            button5.TabIndex = 6;
-            button5.Text = "REPORTES";
-            button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            button5.UseVisualStyleBackColor = true;
-            // 
-            // btnpedidos
-            // 
-            btnpedidos.FlatAppearance.BorderSize = 0;
-            btnpedidos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
-            btnpedidos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btnpedidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            btnpedidos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
-            btnpedidos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            btnpedidos.Location = new System.Drawing.Point(12, 353);
-            btnpedidos.Name = "btnpedidos";
-            btnpedidos.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            btnpedidos.Size = new System.Drawing.Size(111, 50);
-            btnpedidos.TabIndex = 5;
-            btnpedidos.Text = "PEDIDOS";
-            btnpedidos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            btnpedidos.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            button3.FlatAppearance.BorderSize = 0;
-            button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
-            button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
-            button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            button3.Location = new System.Drawing.Point(12, 427);
-            button3.Name = "button3";
-            button3.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            button3.Size = new System.Drawing.Size(171, 50);
-            button3.TabIndex = 4;
-            button3.Text = "USUARIOS";
-            button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            button3.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
-            button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
-            button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            button1.Location = new System.Drawing.Point(14, 232);
-            button1.Name = "button1";
-            button1.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            button1.Size = new System.Drawing.Size(151, 50);
-            button1.TabIndex = 2;
-            button1.Text = "PRODUCTOS";
-            button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            button1.UseVisualStyleBackColor = true;
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(65, 174);
+            this.label7.Location = new System.Drawing.Point(59, 174);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(64, 28);
             this.label7.TabIndex = 1;

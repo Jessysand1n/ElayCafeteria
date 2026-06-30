@@ -318,6 +318,11 @@ namespace PL
             Form2 FormularioReporte = new Form2();
             FormularioReporte.ShowDialog();
         }
+
+        private void btnfin_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
     
 }

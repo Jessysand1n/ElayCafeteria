@@ -36,9 +36,8 @@
             System.Windows.Forms.Button btnExpPro;
             System.Windows.Forms.Button btnImpPro;
             System.Windows.Forms.Button button8;
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.Button btnclientes;
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -82,7 +81,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.docImprimir = new System.Drawing.Printing.PrintDocument();
-            this.button6 = new System.Windows.Forms.Button();
             button2 = new System.Windows.Forms.Button();
             button3 = new System.Windows.Forms.Button();
             button4 = new System.Windows.Forms.Button();
@@ -290,7 +288,6 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.Controls.Add(this.button6);
             this.panel2.Controls.Add(this.Btneliminar);
             this.panel2.Controls.Add(btnImpPro);
             this.panel2.Controls.Add(btnExpPro);
@@ -363,9 +360,9 @@
             // 
             // picProducto
             // 
-            this.picProducto.Location = new System.Drawing.Point(232, 360);
+            this.picProducto.Location = new System.Drawing.Point(196, 320);
             this.picProducto.Name = "picProducto";
-            this.picProducto.Size = new System.Drawing.Size(149, 119);
+            this.picProducto.Size = new System.Drawing.Size(185, 159);
             this.picProducto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picProducto.TabIndex = 21;
             this.picProducto.TabStop = false;
@@ -556,7 +553,7 @@
             this.buscar});
             this.toolStrip1.Location = new System.Drawing.Point(20, 211);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(370, 28);
+            this.toolStrip1.Size = new System.Drawing.Size(370, 31);
             this.toolStrip1.TabIndex = 5;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -724,51 +721,6 @@
             this.label2.Text = "PRODUCTOS";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // btnclientes
-            // 
-            btnclientes.FlatAppearance.BorderSize = 0;
-            btnclientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
-            btnclientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btnclientes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
-            btnclientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            btnclientes.Location = new System.Drawing.Point(35, 541);
-            btnclientes.Name = "btnclientes";
-            btnclientes.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            btnclientes.Size = new System.Drawing.Size(111, 50);
-            btnclientes.TabIndex = 8;
-            btnclientes.Text = "CLIENTES";
-            btnclientes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            btnclientes.UseVisualStyleBackColor = true;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
-            this.label12.Location = new System.Drawing.Point(249, 238);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(108, 19);
-            this.label12.TabIndex = 20;
-            this.label12.Text = "SUBIR IMAGEN";
-            // 
-            // picProducto
-            // 
-            this.picProducto.Location = new System.Drawing.Point(232, 360);
-            this.picProducto.Name = "picProducto";
-            this.picProducto.Size = new System.Drawing.Size(149, 119);
-            this.picProducto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picProducto.TabIndex = 21;
-            this.picProducto.TabStop = false;
-            // 
-            // btnsubirImg
-            // 
-            this.button6.Location = new System.Drawing.Point(198, 323);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 11;
-            this.button6.Text = "button6";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
@@ -848,7 +800,6 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.PictureBox picProducto;
         private System.Windows.Forms.Button btnsubirImg;
-        private System.Windows.Forms.Button button6;
     }
 }
 

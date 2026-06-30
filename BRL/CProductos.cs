@@ -67,7 +67,6 @@ namespace BRL
 
         public void modificar(int id_producto, string nom, string desc, decimal precio, int stock, string estado, int id_categoria, string imagen)
         {
-            // REVISA ESTE ORDEN: Debe coincidir exactamente con las variables de tu SP en SQL
             object[] p = new object[] { id_producto, nom, desc, precio, stock, estado, id_categoria, imagen };
             objacc.Ejecutar("sp_EditarProducto", p);
         }
@@ -80,7 +79,6 @@ namespace BRL
 
 
         #endregion
-
 
         #region "categoria"
 

@@ -1,4 +1,5 @@
 ﻿using BRL;
+using DAL;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -310,6 +311,12 @@ namespace PL
         private void btnfin_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Form2 FormularioReporte = new Form2();
+            FormularioReporte.ShowDialog();
         }
     }
     

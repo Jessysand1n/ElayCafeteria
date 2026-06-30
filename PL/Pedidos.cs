@@ -1,4 +1,5 @@
 ﻿using BRL;
+using DAL;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -200,7 +201,8 @@ namespace PL
 
         private void reporte_Click(object sender, EventArgs e)
         {
-           
+            Form3 FormularioReporte = new Form3();
+            FormularioReporte.ShowDialog();
         }
         //
         private void button1_Click(object sender, EventArgs e)

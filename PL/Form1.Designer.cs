@@ -36,13 +36,13 @@
             System.Windows.Forms.Button btnExpPro;
             System.Windows.Forms.Button btnImpPro;
             System.Windows.Forms.Button button8;
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.Button btnclientes;
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button6 = new System.Windows.Forms.Button();
             this.Btneliminar = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.btnsubirImg = new System.Windows.Forms.Button();
@@ -82,7 +82,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.docImprimir = new System.Drawing.Printing.PrintDocument();
-            this.button6 = new System.Windows.Forms.Button();
             button2 = new System.Windows.Forms.Button();
             button3 = new System.Windows.Forms.Button();
             button4 = new System.Windows.Forms.Button();
@@ -143,7 +142,7 @@
             button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
             button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            button4.Location = new System.Drawing.Point(35, 470);
+            button4.Location = new System.Drawing.Point(62, 470);
             button4.Name = "button4";
             button4.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             button4.Size = new System.Drawing.Size(111, 50);
@@ -151,6 +150,7 @@
             button4.Text = "PEDIDOS";
             button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             button4.UseVisualStyleBackColor = true;
+            button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -183,6 +183,7 @@
             button1.Text = "PRODUCTOS";
             button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             button1.UseVisualStyleBackColor = true;
+            button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnExpPro
             // 
@@ -278,6 +279,7 @@
             this.label1.Size = new System.Drawing.Size(64, 28);
             this.label1.TabIndex = 1;
             this.label1.Text = "ELAY!";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // pictureBox1
             // 
@@ -307,6 +309,15 @@
             this.panel2.Size = new System.Drawing.Size(1155, 780);
             this.panel2.TabIndex = 2;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(198, 323);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(75, 23);
+            this.button6.TabIndex = 11;
+            this.button6.Text = "button6";
+            this.button6.UseVisualStyleBackColor = true;
             // 
             // Btneliminar
             // 
@@ -605,14 +616,14 @@
             this.dgv.BackgroundColor = System.Drawing.Color.White;
             this.dgv.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgv.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv.EnableHeadersVisualStyles = false;
             this.dgv.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
@@ -723,51 +734,6 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "PRODUCTOS";
             this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // btnclientes
-            // 
-            btnclientes.FlatAppearance.BorderSize = 0;
-            btnclientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
-            btnclientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btnclientes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
-            btnclientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            btnclientes.Location = new System.Drawing.Point(35, 541);
-            btnclientes.Name = "btnclientes";
-            btnclientes.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            btnclientes.Size = new System.Drawing.Size(111, 50);
-            btnclientes.TabIndex = 8;
-            btnclientes.Text = "CLIENTES";
-            btnclientes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            btnclientes.UseVisualStyleBackColor = true;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
-            this.label12.Location = new System.Drawing.Point(249, 238);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(108, 19);
-            this.label12.TabIndex = 20;
-            this.label12.Text = "SUBIR IMAGEN";
-            // 
-            // picProducto
-            // 
-            this.picProducto.Location = new System.Drawing.Point(232, 360);
-            this.picProducto.Name = "picProducto";
-            this.picProducto.Size = new System.Drawing.Size(149, 119);
-            this.picProducto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picProducto.TabIndex = 21;
-            this.picProducto.TabStop = false;
-            // 
-            // btnsubirImg
-            // 
-            this.button6.Location = new System.Drawing.Point(198, 323);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 11;
-            this.button6.Text = "button6";
-            this.button6.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 

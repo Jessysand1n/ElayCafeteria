@@ -36,14 +36,17 @@
             System.Windows.Forms.Button btnExpPro;
             System.Windows.Forms.Button btnImpPro;
             System.Windows.Forms.Button button8;
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.Button btnclientes;
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.Btneliminar = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.btnsubirImg = new System.Windows.Forms.Button();
+            this.picProducto = new System.Windows.Forms.PictureBox();
+            this.label12 = new System.Windows.Forms.Label();
             this.op2 = new System.Windows.Forms.RadioButton();
             this.op1 = new System.Windows.Forms.RadioButton();
             this.Btnmodificar = new System.Windows.Forms.Button();
@@ -78,9 +81,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.docImprimir = new System.Drawing.Printing.PrintDocument();
-            this.label12 = new System.Windows.Forms.Label();
-            this.picProducto = new System.Windows.Forms.PictureBox();
-            this.btnsubirImg = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             button2 = new System.Windows.Forms.Button();
             button3 = new System.Windows.Forms.Button();
             button4 = new System.Windows.Forms.Button();
@@ -94,12 +95,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picProducto)).BeginInit();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picProducto)).BeginInit();
             this.SuspendLayout();
             // 
             // button2
@@ -233,6 +234,22 @@
             button8.UseVisualStyleBackColor = true;
             button8.Click += new System.EventHandler(this.button8_Click);
             // 
+            // btnclientes
+            // 
+            btnclientes.FlatAppearance.BorderSize = 0;
+            btnclientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
+            btnclientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btnclientes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
+            btnclientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            btnclientes.Location = new System.Drawing.Point(35, 541);
+            btnclientes.Name = "btnclientes";
+            btnclientes.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            btnclientes.Size = new System.Drawing.Size(111, 50);
+            btnclientes.TabIndex = 8;
+            btnclientes.Text = "CLIENTES";
+            btnclientes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            btnclientes.UseVisualStyleBackColor = true;
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -272,6 +289,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.Controls.Add(this.button6);
             this.panel2.Controls.Add(this.Btneliminar);
             this.panel2.Controls.Add(btnImpPro);
             this.panel2.Controls.Add(btnExpPro);
@@ -328,6 +346,39 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(409, 567);
             this.panel6.TabIndex = 6;
+            // 
+            // btnsubirImg
+            // 
+            this.btnsubirImg.BackColor = System.Drawing.Color.MediumPurple;
+            this.btnsubirImg.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsubirImg.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnsubirImg.Location = new System.Drawing.Point(253, 268);
+            this.btnsubirImg.Name = "btnsubirImg";
+            this.btnsubirImg.Size = new System.Drawing.Size(88, 37);
+            this.btnsubirImg.TabIndex = 22;
+            this.btnsubirImg.Text = "SUBIR";
+            this.btnsubirImg.UseVisualStyleBackColor = false;
+            this.btnsubirImg.Click += new System.EventHandler(this.btnsubirImg_Click);
+            // 
+            // picProducto
+            // 
+            this.picProducto.Location = new System.Drawing.Point(232, 360);
+            this.picProducto.Name = "picProducto";
+            this.picProducto.Size = new System.Drawing.Size(149, 119);
+            this.picProducto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picProducto.TabIndex = 21;
+            this.picProducto.TabStop = false;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
+            this.label12.Location = new System.Drawing.Point(249, 238);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(108, 19);
+            this.label12.TabIndex = 20;
+            this.label12.Text = "SUBIR IMAGEN";
             // 
             // op2
             // 
@@ -553,14 +604,14 @@
             this.dgv.BackgroundColor = System.Drawing.Color.White;
             this.dgv.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgv.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv.EnableHeadersVisualStyles = false;
             this.dgv.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
@@ -672,54 +723,14 @@
             this.label2.Text = "PRODUCTOS";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // btnclientes
+            // button6
             // 
-            btnclientes.FlatAppearance.BorderSize = 0;
-            btnclientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
-            btnclientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btnclientes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
-            btnclientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            btnclientes.Location = new System.Drawing.Point(35, 541);
-            btnclientes.Name = "btnclientes";
-            btnclientes.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            btnclientes.Size = new System.Drawing.Size(111, 50);
-            btnclientes.TabIndex = 8;
-            btnclientes.Text = "CLIENTES";
-            btnclientes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            btnclientes.UseVisualStyleBackColor = true;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
-            this.label12.Location = new System.Drawing.Point(249, 238);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(108, 19);
-            this.label12.TabIndex = 20;
-            this.label12.Text = "SUBIR IMAGEN";
-            // 
-            // picProducto
-            // 
-            this.picProducto.Location = new System.Drawing.Point(232, 360);
-            this.picProducto.Name = "picProducto";
-            this.picProducto.Size = new System.Drawing.Size(149, 119);
-            this.picProducto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picProducto.TabIndex = 21;
-            this.picProducto.TabStop = false;
-            // 
-            // btnsubirImg
-            // 
-            this.btnsubirImg.BackColor = System.Drawing.Color.MediumPurple;
-            this.btnsubirImg.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsubirImg.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnsubirImg.Location = new System.Drawing.Point(253, 268);
-            this.btnsubirImg.Name = "btnsubirImg";
-            this.btnsubirImg.Size = new System.Drawing.Size(88, 37);
-            this.btnsubirImg.TabIndex = 22;
-            this.btnsubirImg.Text = "SUBIR";
-            this.btnsubirImg.UseVisualStyleBackColor = false;
-            this.btnsubirImg.Click += new System.EventHandler(this.btnsubirImg_Click);
+            this.button6.Location = new System.Drawing.Point(198, 323);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(75, 23);
+            this.button6.TabIndex = 11;
+            this.button6.Text = "button6";
+            this.button6.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -741,6 +752,7 @@
             this.panel2.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picProducto)).EndInit();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).EndInit();
@@ -750,7 +762,6 @@
             this.panel5.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picProducto)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -800,6 +811,7 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.PictureBox picProducto;
         private System.Windows.Forms.Button btnsubirImg;
+        private System.Windows.Forms.Button button6;
     }
 }
 

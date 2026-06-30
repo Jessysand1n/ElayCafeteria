@@ -19,9 +19,13 @@ namespace DAL
 
         private void Form3_Load(object sender, EventArgs e)
         {
+            // TODO: esta línea de código carga datos en la tabla 'eLAYCAFETERIADataSet.SPMOSTRARPEDIDOS' Puede moverla o quitarla según sea necesario.
+            this.sPMOSTRARPEDIDOSTableAdapter.Fill(this.eLAYCAFETERIADataSet.SPMOSTRARPEDIDOS);
 
-            this.reportViewer1.RefreshReport();
-            this.reportViewer2.RefreshReport();
+            this.reportViewer5.RefreshReport();
+            
+            this.reportViewer5.RefreshReport();
+            this.reportViewer5.RefreshReport();
         }
     }
 }

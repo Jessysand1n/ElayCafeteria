@@ -2,13 +2,13 @@
 <Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
   <Body>
     <ReportItems>
-      <Tablix Name="Tablix1">
+      <Tablix Name="Tablix2">
         <TablixCorner>
           <TablixCornerRows>
             <TablixCornerRow>
               <TablixCornerCell>
                 <CellContents>
-                  <Textbox Name="Textbox7">
+                  <Textbox Name="Textbox9">
                     <CanGrow>true</CanGrow>
                     <KeepTogether>true</KeepTogether>
                     <Paragraphs>
@@ -22,7 +22,7 @@
                         <Style />
                       </Paragraph>
                     </Paragraphs>
-                    <rd:DefaultName>Textbox7</rd:DefaultName>
+                    <rd:DefaultName>Textbox9</rd:DefaultName>
                     <Style>
                       <Border>
                         <Color>LightGrey</Color>
@@ -157,7 +157,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Sum(Fields!subtotal.Value)</Value>
+                              <Value>=Fields!subtotal.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -193,7 +193,7 @@
               <TablixHeader>
                 <Size>0.6cm</Size>
                 <CellContents>
-                  <Textbox Name="Textbox5">
+                  <Textbox Name="Textbox7">
                     <CanGrow>true</CanGrow>
                     <KeepTogether>true</KeepTogether>
                     <Paragraphs>
@@ -207,7 +207,40 @@
                         <Style />
                       </Paragraph>
                     </Paragraphs>
-                    <rd:DefaultName>Textbox5</rd:DefaultName>
+                    <rd:DefaultName>Textbox7</rd:DefaultName>
+                    <Style>
+                      <Border>
+                        <Color>LightGrey</Color>
+                        <Style>Solid</Style>
+                      </Border>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                  </Textbox>
+                </CellContents>
+              </TablixHeader>
+            </TablixMember>
+            <TablixMember>
+              <TablixHeader>
+                <Size>0.6cm</Size>
+                <CellContents>
+                  <Textbox Name="Textbox14">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>cantidad</Value>
+                            <Style />
+                          </TextRun>
+                        </TextRuns>
+                        <Style />
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox14</rd:DefaultName>
                     <Style>
                       <Border>
                         <Color>LightGrey</Color>
@@ -233,7 +266,7 @@
                       <Paragraph>
                         <TextRuns>
                           <TextRun>
-                            <Value>cantidad</Value>
+                            <Value>precio unitario</Value>
                             <Style />
                           </TextRun>
                         </TextRuns>
@@ -266,7 +299,18 @@
                       <Paragraph>
                         <TextRuns>
                           <TextRun>
-                            <Value>precio unitario</Value>
+                            <Value>Subtotal</Value>
+                            <Style />
+                          </TextRun>
+                        </TextRuns>
+                        <Style>
+                          <TextAlign>Left</TextAlign>
+                        </Style>
+                      </Paragraph>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value />
                             <Style />
                           </TextRun>
                         </TextRuns>
@@ -274,39 +318,6 @@
                       </Paragraph>
                     </Paragraphs>
                     <rd:DefaultName>Textbox10</rd:DefaultName>
-                    <Style>
-                      <Border>
-                        <Color>LightGrey</Color>
-                        <Style>Solid</Style>
-                      </Border>
-                      <PaddingLeft>2pt</PaddingLeft>
-                      <PaddingRight>2pt</PaddingRight>
-                      <PaddingTop>2pt</PaddingTop>
-                      <PaddingBottom>2pt</PaddingBottom>
-                    </Style>
-                  </Textbox>
-                </CellContents>
-              </TablixHeader>
-            </TablixMember>
-            <TablixMember>
-              <TablixHeader>
-                <Size>0.6cm</Size>
-                <CellContents>
-                  <Textbox Name="Textbox8">
-                    <CanGrow>true</CanGrow>
-                    <KeepTogether>true</KeepTogether>
-                    <Paragraphs>
-                      <Paragraph>
-                        <TextRuns>
-                          <TextRun>
-                            <Value>subtotal</Value>
-                            <Style />
-                          </TextRun>
-                        </TextRuns>
-                        <Style />
-                      </Paragraph>
-                    </Paragraphs>
-                    <rd:DefaultName>Textbox8</rd:DefaultName>
                     <Style>
                       <Border>
                         <Color>LightGrey</Color>
@@ -370,9 +381,9 @@
             </TablixMember>
           </TablixMembers>
         </TablixRowHierarchy>
-        <DataSetName>DataSet2</DataSetName>
-        <Top>2.44264cm</Top>
-        <Left>2.15053cm</Left>
+        <DataSetName>DataSet1</DataSetName>
+        <Top>1.76953cm</Top>
+        <Left>1.7907cm</Left>
         <Height>1.2cm</Height>
         <Width>12.5cm</Width>
         <Style>
@@ -382,13 +393,13 @@
         </Style>
       </Tablix>
     </ReportItems>
-    <Height>3.40833in</Height>
+    <Height>3.775in</Height>
     <Style />
   </Body>
-  <Width>6.64758in</Width>
+  <Width>6.5in</Width>
   <Page>
     <PageHeader>
-      <Height>2.69239cm</Height>
+      <Height>2.54cm</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
@@ -396,6 +407,7 @@
           <Source>Embedded</Source>
           <Value>logo</Value>
           <Sizing>FitProportional</Sizing>
+          <Top>0.024cm</Top>
           <Height>2.516cm</Height>
           <Width>2.91817cm</Width>
           <Style>
@@ -424,41 +436,11 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox1</rd:DefaultName>
-          <Top>0.381cm</Top>
-          <Left>3.23003cm</Left>
+          <Top>0.54666cm</Top>
+          <Left>2.85517cm</Left>
           <Height>1.44667cm</Height>
           <Width>13.65483cm</Width>
           <ZIndex>1</ZIndex>
-          <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
-            <PaddingLeft>2pt</PaddingLeft>
-            <PaddingRight>2pt</PaddingRight>
-            <PaddingTop>2pt</PaddingTop>
-            <PaddingBottom>2pt</PaddingBottom>
-          </Style>
-        </Textbox>
-        <Textbox Name="Textbox2">
-          <CanGrow>true</CanGrow>
-          <KeepTogether>true</KeepTogether>
-          <Paragraphs>
-            <Paragraph>
-              <TextRuns>
-                <TextRun>
-                  <Value>=Globals!ExecutionTime</Value>
-                  <Style />
-                </TextRun>
-              </TextRuns>
-              <Style />
-            </Paragraph>
-          </Paragraphs>
-          <rd:DefaultName>Textbox2</rd:DefaultName>
-          <Top>2.09239cm</Top>
-          <Left>11.20986cm</Left>
-          <Height>0.6cm</Height>
-          <Width>5.675cm</Width>
-          <ZIndex>2</ZIndex>
           <Style>
             <Border>
               <Style>None</Style>
@@ -477,40 +459,9 @@
       </Style>
     </PageHeader>
     <PageFooter>
-      <Height>1.37583cm</Height>
+      <Height>2.54cm</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
-      <ReportItems>
-        <Textbox Name="Textbox3">
-          <CanGrow>true</CanGrow>
-          <KeepTogether>true</KeepTogether>
-          <Paragraphs>
-            <Paragraph>
-              <TextRuns>
-                <TextRun>
-                  <Value>="Pagina " &amp; Globals!PageNumber &amp; " de " &amp; Globals!TotalPages</Value>
-                  <Style />
-                </TextRun>
-              </TextRuns>
-              <Style />
-            </Paragraph>
-          </Paragraphs>
-          <rd:DefaultName>Textbox3</rd:DefaultName>
-          <Top>0.41967cm</Top>
-          <Left>7.0866cm</Left>
-          <Height>0.6cm</Height>
-          <Width>2.5cm</Width>
-          <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
-            <PaddingLeft>2pt</PaddingLeft>
-            <PaddingRight>2pt</PaddingRight>
-            <PaddingTop>2pt</PaddingTop>
-            <PaddingBottom>2pt</PaddingBottom>
-          </Style>
-        </Textbox>
-      </ReportItems>
       <Style>
         <Border>
           <Style>None</Style>
@@ -528,18 +479,18 @@
   </Page>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
-    <DataSource Name="ELAYCAFETERIADataSet2">
+    <DataSource Name="ELAYCAFETERIADataSet3">
       <ConnectionProperties>
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>9048da7b-d934-441c-b425-a75b6f1c6181</rd:DataSourceID>
+      <rd:DataSourceID>1ade1118-a8eb-4fb9-aff2-e09bdf72906a</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
-    <DataSet Name="DataSet2">
+    <DataSet Name="DataSet1">
       <Query>
-        <DataSourceName>ELAYCAFETERIADataSet2</DataSourceName>
+        <DataSourceName>ELAYCAFETERIADataSet3</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
@@ -565,8 +516,8 @@
         </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>ELAYCAFETERIADataSet2</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\HP\Downloads\elay\DAL\ELAYCAFETERIADataSet2.xsd</rd:SchemaPath>
+        <rd:DataSetName>ELAYCAFETERIADataSet3</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\HP\Downloads\elay\DAL\ELAYCAFETERIADataSet3.xsd</rd:SchemaPath>
         <rd:TableName>SPMOSTRARDETALLEPEDIDO</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
@@ -637,5 +588,5 @@ UALRSYPrQDk0ALRR3ooAQkigdaGpKAFOKKSigCMnFITmlakGMUAJTgeKbRQA4GlpgpQaAFpaQ0tABSUU
     </EmbeddedImage>
   </EmbeddedImages>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
-  <rd:ReportID>82f633ad-3031-4f26-909a-d19e66dede2f</rd:ReportID>
+  <rd:ReportID>38c1fd37-4da6-4f46-b500-4b89cc7c025f</rd:ReportID>
 </Report>

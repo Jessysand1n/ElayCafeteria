@@ -78,5 +78,14 @@ namespace BRL
             Object[] P = new object[] { IdVenta };
             return ObjAcc.TraerDataTable("SpMostrarDetallePedido", P);
         }
+        //PedidosGra
+        public DataTable MostrarGrafico()
+        {
+            return ObjAcc.TraerDataTable("SPCONTARPEDIDOSMETODOPAGO");
+        }
+        public DataTable MostrarPedidosGrafico()
+        {
+            return ObjAcc.TraerDataTable("SPMOSTRARPEDIDOSGRAFICO");
+        }
     }
 }

@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.Button btnclientes;
-            System.Windows.Forms.Button btncategorias;
-            System.Windows.Forms.Button button5;
-            System.Windows.Forms.Button btnpedidos;
-            System.Windows.Forms.Button button3;
-            System.Windows.Forms.Button button1;
+            System.Windows.Forms.Button button2;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pedidos));
+            System.Windows.Forms.Button button4;
+            System.Windows.Forms.Button button8;
+            System.Windows.Forms.Button button6;
+            System.Windows.Forms.Button button7;
+            System.Windows.Forms.Button button10;
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.BtnGuardar = new System.Windows.Forms.ToolStripButton();
             this.BtnModificar = new System.Windows.Forms.ToolStripButton();
@@ -69,15 +69,18 @@
             this.Total = new System.Windows.Forms.TextBox();
             this.ResumenDgv = new System.Windows.Forms.DataGridView();
             this.Eliminar = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button9 = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.logo = new System.Windows.Forms.PictureBox();
-            btnclientes = new System.Windows.Forms.Button();
-            btncategorias = new System.Windows.Forms.Button();
-            button5 = new System.Windows.Forms.Button();
-            btnpedidos = new System.Windows.Forms.Button();
-            button3 = new System.Windows.Forms.Button();
-            button1 = new System.Windows.Forms.Button();
+            button2 = new System.Windows.Forms.Button();
+            button4 = new System.Windows.Forms.Button();
+            button8 = new System.Windows.Forms.Button();
+            button6 = new System.Windows.Forms.Button();
+            button7 = new System.Windows.Forms.Button();
+            button10 = new System.Windows.Forms.Button();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPedidos)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -86,113 +89,27 @@
             this.groupBox2.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ResumenDgv)).BeginInit();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnclientes
+            // button2
             // 
-            btnclientes.FlatAppearance.BorderSize = 0;
-            btnclientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
-            btnclientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btnclientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            btnclientes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
-            btnclientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            btnclientes.Location = new System.Drawing.Point(12, 495);
-            btnclientes.Name = "btnclientes";
-            btnclientes.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            btnclientes.Size = new System.Drawing.Size(122, 50);
-            btnclientes.TabIndex = 9;
-            btnclientes.Text = "CLIENTES";
-            btnclientes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            btnclientes.UseVisualStyleBackColor = true;
-            // 
-            // btncategorias
-            // 
-            btncategorias.FlatAppearance.BorderSize = 0;
-            btncategorias.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
-            btncategorias.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btncategorias.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            btncategorias.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
-            btncategorias.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            btncategorias.Location = new System.Drawing.Point(12, 291);
-            btncategorias.Name = "btncategorias";
-            btncategorias.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            btncategorias.Size = new System.Drawing.Size(151, 50);
-            btncategorias.TabIndex = 7;
-            btncategorias.Text = "CATEGORIAS";
-            btncategorias.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            btncategorias.UseVisualStyleBackColor = true;
-            btncategorias.Click += new System.EventHandler(this.btncategorias_Click);
-            // 
-            // button5
-            // 
-            button5.FlatAppearance.BorderSize = 0;
-            button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
-            button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
-            button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            button5.Location = new System.Drawing.Point(14, 573);
-            button5.Name = "button5";
-            button5.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            button5.Size = new System.Drawing.Size(134, 50);
-            button5.TabIndex = 6;
-            button5.Text = "REPORTES";
-            button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            button5.UseVisualStyleBackColor = true;
-            // 
-            // btnpedidos
-            // 
-            btnpedidos.FlatAppearance.BorderSize = 0;
-            btnpedidos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
-            btnpedidos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btnpedidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            btnpedidos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
-            btnpedidos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            btnpedidos.Location = new System.Drawing.Point(12, 361);
-            btnpedidos.Name = "btnpedidos";
-            btnpedidos.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            btnpedidos.Size = new System.Drawing.Size(111, 50);
-            btnpedidos.TabIndex = 5;
-            btnpedidos.Text = "PEDIDOS";
-            btnpedidos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            btnpedidos.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            button3.FlatAppearance.BorderSize = 0;
-            button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
-            button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
-            button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            button3.Location = new System.Drawing.Point(12, 427);
-            button3.Name = "button3";
-            button3.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            button3.Size = new System.Drawing.Size(171, 50);
-            button3.TabIndex = 4;
-            button3.Text = "USUARIOS";
-            button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            button3.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
-            button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
-            button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            button1.Location = new System.Drawing.Point(14, 232);
-            button1.Name = "button1";
-            button1.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            button1.Size = new System.Drawing.Size(151, 50);
-            button1.TabIndex = 2;
-            button1.Text = "PRODUCTOS";
-            button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += new System.EventHandler(this.button1_Click_1);
+            button2.FlatAppearance.BorderSize = 0;
+            button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
+            button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
+            button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            button2.Location = new System.Drawing.Point(38, 433);
+            button2.Name = "button2";
+            button2.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            button2.Size = new System.Drawing.Size(153, 50);
+            button2.TabIndex = 10;
+            button2.Text = "PEDIDOS GRAFICO";
+            button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // toolStrip1
             // 
@@ -273,7 +190,7 @@
             // 
             this.dgvPedidos.BackgroundColor = System.Drawing.Color.FloralWhite;
             this.dgvPedidos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPedidos.Location = new System.Drawing.Point(192, 435);
+            this.dgvPedidos.Location = new System.Drawing.Point(200, 433);
             this.dgvPedidos.Name = "dgvPedidos";
             this.dgvPedidos.RowHeadersWidth = 51;
             this.dgvPedidos.RowTemplate.Height = 24;
@@ -295,7 +212,7 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.groupBox3);
             this.groupBox1.Font = new System.Drawing.Font("Cooper Black", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(192, 74);
+            this.groupBox1.Location = new System.Drawing.Point(200, 74);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(350, 337);
             this.groupBox1.TabIndex = 2;
@@ -474,12 +391,14 @@
             // 
             this.groupBox2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.groupBox2.BackColor = System.Drawing.Color.BurlyWood;
+            this.groupBox2.Controls.Add(this.label7);
+            this.groupBox2.Controls.Add(this.button1);
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.reporte);
             this.groupBox2.Controls.Add(this.groupBox4);
             this.groupBox2.Controls.Add(this.ResumenDgv);
             this.groupBox2.Font = new System.Drawing.Font("Cooper Black", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(548, 74);
+            this.groupBox2.Location = new System.Drawing.Point(556, 74);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(892, 337);
             this.groupBox2.TabIndex = 3;
@@ -582,51 +501,171 @@
             this.Eliminar.Text = "Eliminar";
             this.Eliminar.Width = 125;
             // 
-            // panel1
+            // panel2
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panel1.Controls.Add(btnclientes);
-            this.panel1.Controls.Add(btncategorias);
-            this.panel1.Controls.Add(button5);
-            this.panel1.Controls.Add(btnpedidos);
-            this.panel1.Controls.Add(button3);
-            this.panel1.Controls.Add(button1);
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.logo);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(186, 780);
-            this.panel1.TabIndex = 4;
+            this.panel2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel2.Controls.Add(button2);
+            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Controls.Add(button4);
+            this.panel2.Controls.Add(button8);
+            this.panel2.Controls.Add(button6);
+            this.panel2.Controls.Add(button7);
+            this.panel2.Controls.Add(this.button9);
+            this.panel2.Controls.Add(button10);
+            this.panel2.Controls.Add(this.label11);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(200, 780);
+            this.panel2.TabIndex = 5;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.ErrorImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(38, 14);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(154, 132);
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
+            // 
+            // button4
+            // 
+            button4.FlatAppearance.BorderSize = 0;
+            button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
+            button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
+            button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            button4.Location = new System.Drawing.Point(38, 538);
+            button4.Name = "button4";
+            button4.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            button4.Size = new System.Drawing.Size(111, 50);
+            button4.TabIndex = 8;
+            button4.Text = "CLIENTES";
+            button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            button4.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            button8.FlatAppearance.BorderSize = 0;
+            button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
+            button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            button8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
+            button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            button8.Location = new System.Drawing.Point(38, 309);
+            button8.Name = "button8";
+            button8.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            button8.Size = new System.Drawing.Size(138, 50);
+            button8.TabIndex = 7;
+            button8.Text = "CATEGORIAS";
+            button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            button8.UseVisualStyleBackColor = true;
+            button8.Click += new System.EventHandler(this.button8_Click_1);
+            // 
+            // button6
+            // 
+            button6.FlatAppearance.BorderSize = 0;
+            button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
+            button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            button6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
+            button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            button6.Location = new System.Drawing.Point(37, 591);
+            button6.Name = "button6";
+            button6.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            button6.Size = new System.Drawing.Size(111, 50);
+            button6.TabIndex = 6;
+            button6.Text = "REPORTES";
+            button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            button6.UseVisualStyleBackColor = true;
+            // 
+            // button7
+            // 
+            button7.FlatAppearance.BorderSize = 0;
+            button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
+            button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            button7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
+            button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            button7.Location = new System.Drawing.Point(38, 377);
+            button7.Name = "button7";
+            button7.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            button7.Size = new System.Drawing.Size(111, 50);
+            button7.TabIndex = 5;
+            button7.Text = "PEDIDOS";
+            button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            button7.UseVisualStyleBackColor = true;
+            button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // button9
+            // 
+            this.button9.FlatAppearance.BorderSize = 0;
+            this.button9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
+            this.button9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button9.Location = new System.Drawing.Point(38, 483);
+            this.button9.Name = "button9";
+            this.button9.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.button9.Size = new System.Drawing.Size(153, 50);
+            this.button9.TabIndex = 4;
+            this.button9.Text = "USUARIOS";
+            this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button9.UseVisualStyleBackColor = true;
+            // 
+            // button10
+            // 
+            button10.FlatAppearance.BorderSize = 0;
+            button10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(248)))));
+            button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            button10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(80)))), ((int)(((byte)(95)))));
+            button10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            button10.Location = new System.Drawing.Point(37, 239);
+            button10.Name = "button10";
+            button10.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            button10.Size = new System.Drawing.Size(138, 50);
+            button10.TabIndex = 2;
+            button10.Text = "PRODUCTOS";
+            button10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            button10.UseVisualStyleBackColor = true;
+            button10.Click += new System.EventHandler(this.button10_Click);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(84, 167);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(64, 28);
+            this.label11.TabIndex = 1;
+            this.label11.Text = "ELAY!";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.PeachPuff;
+            this.button1.BackgroundImage = global::PL.Properties.Resources.cafe;
+            this.button1.Location = new System.Drawing.Point(687, 172);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(130, 105);
+            this.button1.TabIndex = 6;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(59, 174);
+            this.label7.Location = new System.Drawing.Point(710, 287);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(64, 28);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "ELAY!";
-            // 
-            // logo
-            // 
-            this.logo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("logo.BackgroundImage")));
-            this.logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.logo.ErrorImage = ((System.Drawing.Image)(resources.GetObject("logo.ErrorImage")));
-            this.logo.Location = new System.Drawing.Point(29, 12);
-            this.logo.Name = "logo";
-            this.logo.Size = new System.Drawing.Size(136, 118);
-            this.logo.TabIndex = 0;
-            this.logo.TabStop = false;
+            this.label7.Size = new System.Drawing.Size(83, 17);
+            this.label7.TabIndex = 7;
+            this.label7.Text = "GRAFICO";
             // 
             // Pedidos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Bisque;
+            this.BackColor = System.Drawing.Color.PeachPuff;
             this.ClientSize = new System.Drawing.Size(1452, 780);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dgvPedidos);
@@ -649,9 +688,9 @@
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ResumenDgv)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -693,9 +732,12 @@
         private System.Windows.Forms.Button reporte;
         private System.Windows.Forms.DataGridViewButtonColumn Eliminar;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.PictureBox logo;
+        private System.Windows.Forms.Button button1;
     }
 }
 

@@ -317,8 +317,8 @@ namespace PL
 
         private void button5_Click(object sender, EventArgs e)
         {
-            Form2 FormularioReporte = new Form2();
-            FormularioReporte.ShowDialog();
+           // Form2 FormularioReporte = new Form2();
+           // FormularioReporte.ShowDialog();
         }
 
         private void btnfin_Click_1(object sender, EventArgs e)
@@ -328,8 +328,8 @@ namespace PL
 
         private void button5_Click_1(object sender, EventArgs e)
         {
-            Form2 FormularioReporte = new Form2();
-            FormularioReporte.ShowDialog();
+         //   Form2 FormularioReporte = new Form2();
+         //   FormularioReporte.ShowDialog();
         }
     }
     

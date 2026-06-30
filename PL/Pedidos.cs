@@ -201,36 +201,47 @@ namespace PL
 
         private void reporte_Click(object sender, EventArgs e)
         {
-            Form3 FormularioReporte2 = new Form3();
-            FormularioReporte2.ShowDialog();
-        }
-        //
-        private void button1_Click(object sender, EventArgs e)
-        {
-            
+            //Form3 FormularioReporte2 = new Form3();
+            //FormularioReporte2.ShowDialog();
         }
 
-        private void button8_Click(object sender, EventArgs e)
+
+        private void button2_Click(object sender, EventArgs e)
         {
-            CATEGORIAS ventana2 = new CATEGORIAS();
+            PedidosGra pedidosgra = new PedidosGra();
             this.Hide();              // Oculta Form1
-            ventana2.ShowDialog();            // Espera hasta que cierre Form2
+            pedidosgra.ShowDialog();            // Espera hasta que cierre Form2
             this.Show();
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void button10_Click(object sender, EventArgs e)
         {
             Form1 ventana1 = new Form1();
             this.Hide();              // Oculta Form1
             ventana1.ShowDialog();            // Espera hasta que cierre Form2
-
         }
 
-        private void btncategorias_Click(object sender, EventArgs e)
+        private void button8_Click_1(object sender, EventArgs e)
         {
             CATEGORIAS categoria = new CATEGORIAS();
             this.Hide();              // Oculta Form1
             categoria.ShowDialog();            // Espera hasta que cierre Form2
+            this.Show();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Pedidos pedidos = new Pedidos();
+            this.Hide();              // Oculta Form1
+            pedidos.ShowDialog();            // Espera hasta que cierre Form2
+            this.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            PedidosGra pedidosgra = new PedidosGra();
+            this.Hide();              // Oculta Form1
+            pedidosgra.ShowDialog();            // Espera hasta que cierre Form2
             this.Show();
         }
     }

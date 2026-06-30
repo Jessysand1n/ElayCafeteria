@@ -190,6 +190,11 @@ namespace PL
         {
             Application.Exit();
         }
+
+        private void graficoCategorias_Click(object sender, EventArgs e)
+        {
+
+        }
     }
     
 }

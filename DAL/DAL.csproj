@@ -94,6 +94,17 @@
     <None Include="ELAYCAFETERIADataSet1.xss">
       <DependentUpon>ELAYCAFETERIADataSet1.xsd</DependentUpon>
     </None>
+    <None Include="ELAYCAFETERIADataSet2.xsc">
+      <DependentUpon>ELAYCAFETERIADataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ELAYCAFETERIADataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ELAYCAFETERIADataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ELAYCAFETERIADataSet2.xss">
+      <DependentUpon>ELAYCAFETERIADataSet2.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -119,7 +130,11 @@
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Report3.rdlc" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

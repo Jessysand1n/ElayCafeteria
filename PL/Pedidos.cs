@@ -9,7 +9,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Media;//sonido
+using Guna.UI2.WinForms;//noti bien
+//using Tulpep.NotificationWindow; //notificacion
 namespace PL
 {
     public partial class Pedidos : Form
@@ -103,7 +105,13 @@ namespace PL
         {
             if (dtResumen.Rows.Count == 0) return;
             ObjPed.Guardar(Convert.ToInt32(Cliente.SelectedValue), Convert.ToInt32(MetodoDePago.SelectedValue),Convert.ToDecimal(Total.Text), Estado.Text, "VENTA", dtResumen);
-            MessageBox.Show("Pedido registrado");
+            //sonido
+            SoundPlayer sonido = new SoundPlayer(@"C:\Users\HP\Downloads\ELAY\sonido1.wav");
+            sonido.Play();
+
+            guna2Panel1.Visible = true;
+            timer1.Start();
+
             dtResumen.Clear();
             Total.Clear();
             LimpiarParaNuevoPedido();
@@ -243,6 +251,17 @@ namespace PL
             this.Hide();              // Oculta Form1
             pedidosgra.ShowDialog();            // Espera hasta que cierre Form2
             this.Show();
+        }
+
+        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            timer1.Stop();
+            guna2Panel1.Visible = false;
         }
     }
 }

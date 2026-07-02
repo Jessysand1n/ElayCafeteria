@@ -66,6 +66,9 @@
             this.label10 = new System.Windows.Forms.Label();
             this.reporte = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.OpPedido = new System.Windows.Forms.ComboBox();
+            this.label16 = new System.Windows.Forms.Label();
             this.MetodoDePago = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -542,15 +545,49 @@
             // groupBox4
             // 
             this.groupBox4.BackColor = System.Drawing.Color.PeachPuff;
+            this.groupBox4.Controls.Add(this.button3);
+            this.groupBox4.Controls.Add(this.OpPedido);
+            this.groupBox4.Controls.Add(this.label16);
             this.groupBox4.Controls.Add(this.MetodoDePago);
             this.groupBox4.Controls.Add(this.label9);
             this.groupBox4.Controls.Add(this.label8);
             this.groupBox4.Controls.Add(this.Total);
             this.groupBox4.Location = new System.Drawing.Point(17, 172);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(505, 121);
+            this.groupBox4.Size = new System.Drawing.Size(505, 159);
             this.groupBox4.TabIndex = 3;
             this.groupBox4.TabStop = false;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Khaki;
+            this.button3.Location = new System.Drawing.Point(50, 107);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(112, 44);
+            this.button3.TabIndex = 15;
+            this.button3.Text = "PAGAR";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
+            // 
+            // OpPedido
+            // 
+            this.OpPedido.FormattingEnabled = true;
+            this.OpPedido.Location = new System.Drawing.Point(342, 47);
+            this.OpPedido.Name = "OpPedido";
+            this.OpPedido.Size = new System.Drawing.Size(133, 25);
+            this.OpPedido.TabIndex = 14;
+            this.OpPedido.SelectedIndexChanged += new System.EventHandler(this.OpPedido_SelectedIndexChanged);
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Cooper Black", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label16.Location = new System.Drawing.Point(338, 17);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(137, 20);
+            this.label16.TabIndex = 13;
+            this.label16.Text = "Opcion Pedido:";
             // 
             // MetodoDePago
             // 
@@ -559,6 +596,7 @@
             this.MetodoDePago.Name = "MetodoDePago";
             this.MetodoDePago.Size = new System.Drawing.Size(121, 25);
             this.MetodoDePago.TabIndex = 12;
+            this.MetodoDePago.Text = "Elige uno";
             this.MetodoDePago.SelectedIndexChanged += new System.EventHandler(this.MetodoDePago_SelectedIndexChanged);
             // 
             // label9
@@ -637,7 +675,7 @@
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.ErrorImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(38, 14);
+            this.pictureBox1.Location = new System.Drawing.Point(22, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(154, 132);
             this.pictureBox1.TabIndex = 9;
@@ -836,6 +874,9 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.ComboBox OpPedido;
+        private System.Windows.Forms.Button button3;
     }
 }
 

@@ -35,15 +35,14 @@ namespace BRL
             Estado.Text = Dgv.Rows[Fila].Cells[5].Value.ToString();
             Metodo.Text = Dgv.Rows[Fila].Cells[6].Value.ToString();
         }
-        public void Guardar(int IdCliente, int IdMetodo, decimal Total, string Estado, string Tipo, DataTable Dt)
+        public void Guardar(int IdCliente, int IdMetodo, decimal Total, string Estado, byte IdTipoPedido, DataTable Dt)
         {
-            Object[] P = new object[] { IdCliente, IdMetodo, Total, Estado, Tipo };
+            Object[] P = new object[] { IdCliente, IdMetodo, Total, Estado, IdTipoPedido };
             DataTable dtResultado = ObjAcc.TraerDataTable("SPINSERTARPEDIDO", P);
 
             if (dtResultado != null && dtResultado.Rows.Count > 0)
             {
                 int IdVenta = Convert.ToInt32(dtResultado.Rows[0][0]);
-
                 foreach (DataRow Fila in Dt.Rows)
                 {
                     Object[] D = { IdVenta, Fila["ID"], Fila["Cantidad"], Fila["Precio"], Fila["Subtotal"] };
@@ -52,12 +51,12 @@ namespace BRL
             }
         }
 
-        public void Modificar(int IdVenta, int IdCliente, int IdMetodo, decimal Total, string Estado, string Tipo, DataTable Dt)
+        public void Modificar(int IdVenta, int IdCliente, int IdMetodo, decimal Total, string Estado, byte IdTipoPedido, DataTable Dt)
         {
             Object[] P_del = new object[] { IdVenta };
             ObjAcc.Ejecutar("SPELIMINARDETALLES", P_del);
 
-            Object[] P = new object[] { IdVenta, IdCliente, IdMetodo, Total, Estado, Tipo };
+            Object[] P = new object[] { IdVenta, IdCliente, IdMetodo, Total, Estado, IdTipoPedido };
             ObjAcc.Ejecutar("SPMODIFICARPEDIDO", P);
 
             foreach (DataRow Fila in Dt.Rows)

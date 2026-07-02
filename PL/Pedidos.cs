@@ -39,8 +39,8 @@ namespace PL
             ObjPed.CargarCombo(Producto, "sp_ListarProductos", "Producto", "ID_Cat");
             ObjPed.CargarCombo(MetodoDePago, "SPMOSTRARMETODOPAGO", "nombre", "id_metodo_pago");
 
-            Estado.Items.Add("ACTIVO");
-            Estado.Items.Add("CANCELADO");
+            // En Form_Load:
+            ObjPed.CargarCombo(OpPedido, "SPMOSTRARTIPOPEDIDO", "Nombre", "IdTipoPedido");
             CargarPedidosEnGrilla();
 
             if (ResumenDgv.Columns["Eliminar"] != null)
@@ -104,11 +104,12 @@ namespace PL
         private void BtnGuardar_Click(object sender, EventArgs e)
         {
             if (dtResumen.Rows.Count == 0) return;
-            ObjPed.Guardar(Convert.ToInt32(Cliente.SelectedValue), Convert.ToInt32(MetodoDePago.SelectedValue),Convert.ToDecimal(Total.Text), Estado.Text, "VENTA", dtResumen);
+            byte idTipoSeleccionado = Convert.ToByte(OpPedido.SelectedValue);
+            ObjPed.Guardar(Convert.ToInt32(Cliente.SelectedValue), Convert.ToInt32(MetodoDePago.SelectedValue),Convert.ToDecimal(Total.Text), Estado.Text, idTipoSeleccionado, dtResumen);
             //sonido
             SoundPlayer sonido = new SoundPlayer(@"C:\Users\HP\Downloads\ELAY\sonido1.wav");
             sonido.Play();
-
+            // bien compra
             guna2Panel1.Visible = true;
             timer1.Start();
 
@@ -121,9 +122,10 @@ namespace PL
         private void BtnModificar_Click(object sender, EventArgs e)
         {
             if (idPedidoSeleccionado == 0) return;
+            byte idTipoSeleccionado = Convert.ToByte(OpPedido.SelectedValue);
             ObjPed.Modificar(idPedidoSeleccionado,Convert.ToInt32(Cliente.SelectedValue),Convert.ToInt32(MetodoDePago.SelectedValue),
                 Convert.ToDecimal(Total.Text),
-                Estado.Text,"VENTA",dtResumen);
+                Estado.Text, idTipoSeleccionado, dtResumen);
             CargarPedidosEnGrilla();
         }
 
@@ -209,8 +211,8 @@ namespace PL
 
         private void reporte_Click(object sender, EventArgs e)
         {
-            //Form3 FormularioReporte2 = new Form3();
-            //FormularioReporte2.ShowDialog();
+            //Form2 FormularioReporte = new Form2();
+            //FormularioReporte.ShowDialog();
         }
 
 
@@ -262,6 +264,17 @@ namespace PL
         {
             timer1.Stop();
             guna2Panel1.Visible = false;
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            QR Formqr = new QR();
+            Formqr.ShowDialog();
+        }
+
+        private void OpPedido_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

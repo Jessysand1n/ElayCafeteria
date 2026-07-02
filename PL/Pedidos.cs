@@ -258,6 +258,7 @@ namespace PL
         private void guna2Panel1_Paint(object sender, PaintEventArgs e)
         {
 
+
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -268,9 +269,38 @@ namespace PL
 
         private void button3_Click_1(object sender, EventArgs e)
         {
+            if (dtResumen.Rows.Count == 0) return;
+
+            // 1. Abrimos el QR como un diálogo
             QR Formqr = new QR();
             Formqr.ShowDialog();
-        }
+
+            // 2. Si el usuario cerró el QR usando el botón "Realizado" (FueConfirmado es true)
+            if (Formqr.FueConfirmado)
+            {
+                // 3. Ejecutamos la lógica de guardado desde aquí usando tus procedimientos existentes
+                byte idTipoSeleccionado = Convert.ToByte(OpPedido.SelectedValue);
+
+                ObjPed.Guardar(Convert.ToInt32(Cliente.SelectedValue),
+                               Convert.ToInt32(MetodoDePago.SelectedValue),
+                               Convert.ToDecimal(Total.Text),
+                               Estado.Text,
+                               idTipoSeleccionado,
+                               dtResumen);
+
+                // 4. Sonido y Notificación
+                System.Media.SoundPlayer sonido = new System.Media.SoundPlayer(@"C:\Users\HP\Downloads\ELAY\sonido1.wav");
+                sonido.Play();
+
+                // Aquí activas tu aviso (Guna2Panel)
+                guna2Panel1.Visible = true;
+                timer1.Start();
+
+                // 5. Limpiamos
+                LimpiarParaNuevoPedido();
+                CargarPedidosEnGrilla();
+            }
+            }
 
         private void OpPedido_SelectedIndexChanged(object sender, EventArgs e)
         {

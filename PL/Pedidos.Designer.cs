@@ -66,7 +66,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.reporte = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.button3 = new System.Windows.Forms.Button();
+            this.pagar = new System.Windows.Forms.Button();
             this.OpPedido = new System.Windows.Forms.ComboBox();
             this.label16 = new System.Windows.Forms.Label();
             this.MetodoDePago = new System.Windows.Forms.ComboBox();
@@ -410,7 +410,7 @@
             // 
             // Cantidad
             // 
-            this.Cantidad.Location = new System.Drawing.Point(159, 56);
+            this.Cantidad.Location = new System.Drawing.Point(107, 59);
             this.Cantidad.Name = "Cantidad";
             this.Cantidad.Size = new System.Drawing.Size(62, 25);
             this.Cantidad.TabIndex = 12;
@@ -424,9 +424,9 @@
             // Producto
             // 
             this.Producto.FormattingEnabled = true;
-            this.Producto.Location = new System.Drawing.Point(159, 21);
+            this.Producto.Location = new System.Drawing.Point(107, 21);
             this.Producto.Name = "Producto";
-            this.Producto.Size = new System.Drawing.Size(121, 25);
+            this.Producto.Size = new System.Drawing.Size(215, 25);
             this.Producto.TabIndex = 11;
             this.Producto.SelectedIndexChanged += new System.EventHandler(this.Producto_SelectedIndexChanged);
             // 
@@ -545,7 +545,7 @@
             // groupBox4
             // 
             this.groupBox4.BackColor = System.Drawing.Color.PeachPuff;
-            this.groupBox4.Controls.Add(this.button3);
+            this.groupBox4.Controls.Add(this.pagar);
             this.groupBox4.Controls.Add(this.OpPedido);
             this.groupBox4.Controls.Add(this.label16);
             this.groupBox4.Controls.Add(this.MetodoDePago);
@@ -558,21 +558,21 @@
             this.groupBox4.TabIndex = 3;
             this.groupBox4.TabStop = false;
             // 
-            // button3
+            // pagar
             // 
-            this.button3.BackColor = System.Drawing.Color.Khaki;
-            this.button3.Location = new System.Drawing.Point(50, 107);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(112, 44);
-            this.button3.TabIndex = 15;
-            this.button3.Text = "PAGAR";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click_1);
+            this.pagar.BackColor = System.Drawing.Color.Peru;
+            this.pagar.Location = new System.Drawing.Point(20, 109);
+            this.pagar.Name = "pagar";
+            this.pagar.Size = new System.Drawing.Size(269, 44);
+            this.pagar.TabIndex = 15;
+            this.pagar.Text = "PAGAR";
+            this.pagar.UseVisualStyleBackColor = false;
+            this.pagar.Click += new System.EventHandler(this.button3_Click_1);
             // 
             // OpPedido
             // 
             this.OpPedido.FormattingEnabled = true;
-            this.OpPedido.Location = new System.Drawing.Point(342, 47);
+            this.OpPedido.Location = new System.Drawing.Point(168, 46);
             this.OpPedido.Name = "OpPedido";
             this.OpPedido.Size = new System.Drawing.Size(133, 25);
             this.OpPedido.TabIndex = 14;
@@ -583,7 +583,7 @@
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Cooper Black", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label16.Location = new System.Drawing.Point(338, 17);
+            this.label16.Location = new System.Drawing.Point(16, 47);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(137, 20);
             this.label16.TabIndex = 13;
@@ -615,7 +615,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Cooper Black", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label8.Location = new System.Drawing.Point(16, 69);
+            this.label8.Location = new System.Drawing.Point(16, 83);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(60, 20);
             this.label8.TabIndex = 7;
@@ -623,7 +623,7 @@
             // 
             // Total
             // 
-            this.Total.Location = new System.Drawing.Point(92, 69);
+            this.Total.Location = new System.Drawing.Point(168, 78);
             this.Total.Name = "Total";
             this.Total.ReadOnly = true;
             this.Total.Size = new System.Drawing.Size(100, 25);
@@ -876,7 +876,7 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.ComboBox OpPedido;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button pagar;
     }
 }
 
